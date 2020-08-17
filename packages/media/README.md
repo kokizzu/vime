@@ -1,16 +1,16 @@
 # @vime/media
 
-Vime is simply a collection of [web components](https://developer.mozilla.org/en-US/docs/Web/Web_Components) 
-that help you easily build and customize your our own media player. This package contains media files 
-that are used for testing and demonstration purposes throughout Vime's source code, examples and 
+Vime is simply a collection of [web components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
+that help you easily build and customize your our own media player. This package contains media files
+that are used for testing and demonstration purposes throughout Vime's source code, examples and
 public content.
 
-The audio and video files are extracted from [Agent 327: Operation Barbershop][agent-327-blender], 
-which is an [animated feature film][agent-327-youtube] based on Dutch artist 
-[Martin Lodewijk's][martin-wiki] classic comics series [Agent 327][agent-327-wiki]. 
+The audio and video files are extracted from [Agent 327: Operation Barbershop][agent-327-blender],
+which is an [animated feature film][agent-327-youtube] based on Dutch artist
+[Martin Lodewijk's][martin-wiki] classic comics series [Agent 327][agent-327-wiki].
 
-This short film was produced by [Blender.org][blender-org]️ ❤️ and is licensed under 
-[CC-BY-ND][cc-by-nd-license]. They are an amazing organization who continuously gives back to their 
+This short film was produced by [Blender.org][blender-org]️ ❤️ and is licensed under
+[CC-BY-ND][cc-by-nd-license]. They are an amazing organization who continuously gives back to their
 community and shares their work, please consider [supporting them][blender-sub].
 
 [agent-327-wiki]: https://en.wikipedia.org/wiki/Agent_327
