@@ -16,7 +16,18 @@ module.exports = {
       type: 'category',
       label: 'Getting Started',
       items: [
-        'getting-started/installation',
+        {
+          type: 'category',
+          label: 'Installation',
+          items: [
+            'install/html',
+            'install/react',
+            'install/preact',
+            'install/vue',
+            'install/angular',
+            'install/svelte',
+          ],
+        },
         'getting-started/player',
         'getting-started/providers',
         'getting-started/ui',
