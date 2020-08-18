@@ -7,6 +7,7 @@ module.exports = {
       label: 'Welcome',
       items: [
         'welcome/introduction',
+        'welcome/why',
         'welcome/design-principles',
         'welcome/contributing'
       ],
