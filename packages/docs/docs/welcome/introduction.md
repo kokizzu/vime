@@ -133,7 +133,7 @@ listed below.
 
 ## 🎥 Providers
 
-- [Html5][mdn-media-element]
+- [HTML5][mdn-media-element]
 - [HLS][hls]
 - [Dash][dash]
 - [YouTube][youtube]
