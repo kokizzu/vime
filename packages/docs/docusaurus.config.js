@@ -8,8 +8,14 @@ module.exports = {
   organizationName: 'vime-js',
   projectName: 'vime',
   themeConfig: {
+    announcementBar: {
+      id: 'supportus',
+      content:
+        '⭐️ If you like Vime, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/vime-js/vime">GitHub</a>! ⭐️',
+    },
     navbar: {
       title: 'Vime',
+      hideOnScroll: true,
       logo: {
         alt: 'Vime Logo',
         src: 'img/logo.svg',
