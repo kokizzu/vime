@@ -109,13 +109,14 @@ not mentioned in the list above, it most likely still supports Vime natively. Yo
 [here](https://custom-elements-everywhere.com/) if your framework has complete support for 
 web components.
 
-There are also [examples](./examples) for loading and using Vime with:
+There are also [examples](https://github.com/vime-js/vime/tree/master/examples) for loading and 
+using Vime with:
 
-- [HTML](./examples/html)
-- [React](./examples/react)
-- [Vue](./examples/vue)
-- [Angular](./examples/angular)
-- [Svelte](./examples/svelte)
+- [HTML](https://github.com/vime-js/vime/tree/master/examples/html)
+- [React](https://github.com/vime-js/vime/tree/master/examples/react)
+- [Vue](https://github.com/vime-js/vime/tree/master/examples/vue)
+- [Angular](https://github.com/vime-js/vime/tree/master/examples/angular)
+- [Svelte](https://github.com/vime-js/vime/tree/master/examples/svelte)
 
 ## 🖥️ Browsers
 
@@ -133,7 +134,7 @@ listed below.
 ## 🎥 Providers
 
 - [Html5][mdn-media-element]
-- [Hls][hls]
+- [HLS][hls]
 - [Dash][dash]
 - [YouTube][youtube]
 - [Vimeo][vimeo]
@@ -153,7 +154,7 @@ Please remember to be respectful and patient as this is a community driven proje
 ## 🔨 Contributing
 
 If you'd like to contribute and help in building a better media player for the web, then everything 
-you need to get started can be found in the [contributing guide](./CONTRIBUTING.md).
+you need to get started can be found in the [Contributing Guide](https://github.com/vime-js/vime/blob/master/CONTRIBUTING.md).
 
 ## ❤️ Sponsors
 
