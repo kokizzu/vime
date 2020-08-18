@@ -1,6 +1,7 @@
 ---
 title: vime-control-group
 sidebar_label: ControlGroup
+slug: api
 ---
 
 A simple container that enables player controls to be organized into groups. Each group starts on
@@ -32,9 +33,9 @@ a new line.
 
 ## Properties
 
-| Property | Attribute | Description                                                                                                                | Type                                    | Default  |
-| -------- | --------- | -------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- | -------- |
-| `space`  | `space`   | Determines where to add spacing/margin. The amount of spacing is determined by the CSS variable `--control-group-spacing`. | `"both" \| "bottom" \| "none" \| "top"` | `'none'` |
+| Property | Attribute | Description                                                                                                                | Type                                 | Default  |
+| -------- | --------- | -------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ | -------- |
+| `space`  | `space`   | Determines where to add spacing/margin. The amount of spacing is determined by the CSS variable `--control-group-spacing`. | `"both" ∣ "bottom" ∣ "none" ∣ "top"` | `'none'` |
 
 ## CSS Custom Properties
 
@@ -46,7 +47,7 @@ a new line.
 
 ### Used by
 
-- [vime-default-controls](../default-controls)
+- [vime-default-controls](../default-controls/readme.md)
 
 ### Graph
 

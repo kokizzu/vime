@@ -1,6 +1,7 @@
 ---
 title: vime-end-time
 sidebar_label: EndTime
+slug: api
 ---
 
 Formats and displays the duration of the current media.
@@ -29,12 +30,12 @@ Formats and displays the duration of the current media.
 
 ### Used by
 
-- [vime-default-controls](../../controls/default-controls)
-- [vime-time-progress](../time-progress)
+- [vime-default-controls](../../controls/default-controls/readme.md)
+- [vime-time-progress](../time-progress/readme.md)
 
 ### Depends on
 
-- [vime-time](../time)
+- [vime-time](../time/readme.md)
 
 ### Graph
 

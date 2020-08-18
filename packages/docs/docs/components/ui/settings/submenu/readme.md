@@ -1,6 +1,7 @@
 ---
 title: vime-submenu
 sidebar_label: Submenu
+slug: api
 ---
 
 A menu that is to be nested inside another menu. A submenu is closed by default and it provides a
@@ -39,12 +40,12 @@ sections/options together that can be navigated to by the user.
 
 ## Properties
 
-| Property             | Attribute | Description                                                                                                                                                                     | Type                  | Default     |
-| -------------------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------- | ----------- |
-| `active`             | `active`  | Whether the submenu is open/closed.                                                                                                                                             | `boolean`             | `false`     |
-| `hidden`             | `hidden`  | Whether the submenu should be displayed or not.                                                                                                                                 | `boolean`             | `false`     |
-| `hint`               | `hint`    | This can provide additional context about the current state of the submenu. For example, the hint could be the currently selected option if the submenu contains a radio group. | `string \| undefined` | `undefined` |
-| `label` _(required)_ | `label`   | The title of the submenu.                                                                                                                                                       | `string`              | `undefined` |
+| Property             | Attribute | Description                                                                                                                                                                     | Type                 | Default     |
+| -------------------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- | ----------- |
+| `active`             | `active`  | Whether the submenu is open/closed.                                                                                                                                             | `boolean`            | `false`     |
+| `hidden`             | `hidden`  | Whether the submenu should be displayed or not.                                                                                                                                 | `boolean`            | `false`     |
+| `hint`               | `hint`    | This can provide additional context about the current state of the submenu. For example, the hint could be the currently selected option if the submenu contains a radio group. | `string ∣ undefined` | `undefined` |
+| `label` _(required)_ | `label`   | The title of the submenu.                                                                                                                                                       | `string`             | `undefined` |
 
 ## Slots
 
@@ -56,12 +57,12 @@ sections/options together that can be navigated to by the user.
 
 ### Used by
 
-- [vime-default-settings](../default-settings)
+- [vime-default-settings](../default-settings/readme.md)
 
 ### Depends on
 
-- [vime-menu-item](../menu-item)
-- [vime-menu](../menu)
+- [vime-menu-item](../menu-item/readme.md)
+- [vime-menu](../menu/readme.md)
 
 ### Graph
 

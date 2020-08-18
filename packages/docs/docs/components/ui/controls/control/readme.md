@@ -1,6 +1,7 @@
 ---
 title: vime-control
 sidebar_label: Control
+slug: api
 ---
 
 A generic player control that is designed to work with both touch and mouse devices. It also
@@ -46,16 +47,16 @@ seamlessly works with `vime-tooltip`, which can be passed in via the default `sl
 
 ## Properties
 
-| Property             | Attribute    | Description                                                                                                                                                   | Type                   | Default     |
-| -------------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- | ----------- |
-| `expanded`           | `expanded`   | If the control has a popup menu, this indicates whether the menu is open or not. Sets the `aria-expanded` property.                                           | `boolean \| undefined` | `undefined` |
-| `hidden`             | `hidden`     | Whether the control should be displayed or not.                                                                                                               | `boolean`              | `false`     |
-| `identifier`         | `identifier` | The `id` attribute of the control.                                                                                                                            | `string \| undefined`  | `undefined` |
-| `keys`               | `keys`       | A slash (`/`) seperated string of JS keyboard keys (`KeyboardEvent.key`), that when caught in a `keydown` event, will trigger a `click` event on the control. | `string \| undefined`  | `undefined` |
-| `label` _(required)_ | `label`      | The `aria-label` property of the control.                                                                                                                     | `string`               | `undefined` |
-| `menu`               | `menu`       | If the control has a popup menu, then this should be the `id` of said menu. Sets the `aria-controls` property.                                                | `string \| undefined`  | `undefined` |
-| `pressed`            | `pressed`    | If the control is a toggle, this indicated whether the control is in a "pressed" state or not. Sets the `aria-pressed` property.                              | `boolean \| undefined` | `undefined` |
-| `scale`              | `scale`      | Scale the size of the control up/down by the amount given.                                                                                                    | `number`               | `1`         |
+| Property             | Attribute    | Description                                                                                                                                                   | Type                  | Default     |
+| -------------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------- | ----------- |
+| `expanded`           | `expanded`   | If the control has a popup menu, this indicates whether the menu is open or not. Sets the `aria-expanded` property.                                           | `boolean ∣ undefined` | `undefined` |
+| `hidden`             | `hidden`     | Whether the control should be displayed or not.                                                                                                               | `boolean`             | `false`     |
+| `identifier`         | `identifier` | The `id` attribute of the control.                                                                                                                            | `string ∣ undefined`  | `undefined` |
+| `keys`               | `keys`       | A slash (`/`) seperated string of JS keyboard keys (`KeyboardEvent.key`), that when caught in a `keydown` event, will trigger a `click` event on the control. | `string ∣ undefined`  | `undefined` |
+| `label` _(required)_ | `label`      | The `aria-label` property of the control.                                                                                                                     | `string`              | `undefined` |
+| `menu`               | `menu`       | If the control has a popup menu, then this should be the `id` of said menu. Sets the `aria-controls` property.                                                | `string ∣ undefined`  | `undefined` |
+| `pressed`            | `pressed`    | If the control is a toggle, this indicated whether the control is in a "pressed" state or not. Sets the `aria-pressed` property.                              | `boolean ∣ undefined` | `undefined` |
+| `scale`              | `scale`      | Scale the size of the control up/down by the amount given.                                                                                                    | `number`              | `1`         |
 
 ## Events
 
@@ -86,12 +87,12 @@ seamlessly works with `vime-tooltip`, which can be passed in via the default `sl
 
 ### Used by
 
-- [vime-caption-control](../caption-control)
-- [vime-fullscreen-control](../fullscreen-control)
-- [vime-mute-control](../mute-control)
-- [vime-pip-control](../pip-control)
-- [vime-playback-control](../playback-control)
-- [vime-settings-control](../settings-control)
+- [vime-caption-control](../caption-control/readme.md)
+- [vime-fullscreen-control](../fullscreen-control/readme.md)
+- [vime-mute-control](../mute-control/readme.md)
+- [vime-pip-control](../pip-control/readme.md)
+- [vime-playback-control](../playback-control/readme.md)
+- [vime-settings-control](../settings-control/readme.md)
 
 ### Graph
 

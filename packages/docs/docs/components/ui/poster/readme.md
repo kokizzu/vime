@@ -1,6 +1,7 @@
 ---
 title: vime-poster
 sidebar_label: Poster
+slug: api
 ---
 
 Loads the poster set in the player prop `currentPoster` and displays it. The poster will automatically
@@ -21,9 +22,9 @@ dissapear once playback starts.
 
 ## Properties
 
-| Property | Attribute | Description                                                                                   | Type                                                                    | Default   |
-| -------- | --------- | --------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- | --------- |
-| `fit`    | `fit`     | How the poster image should be resized to fit the container (sets the `object-fit` property). | `"contain" \| "cover" \| "fill" \| "none" \| "scale-down" \| undefined` | `'cover'` |
+| Property | Attribute | Description                                                                                   | Type                                                               | Default   |
+| -------- | --------- | --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ | --------- |
+| `fit`    | `fit`     | How the poster image should be resized to fit the container (sets the `object-fit` property). | `"contain" ∣ "cover" ∣ "fill" ∣ "none" ∣ "scale-down" ∣ undefined` | `'cover'` |
 
 ## Events
 
@@ -37,7 +38,7 @@ dissapear once playback starts.
 
 ### Used by
 
-- [vime-default-ui](../default-ui)
+- [vime-default-ui](../default-ui/readme.md)
 
 ### Graph
 

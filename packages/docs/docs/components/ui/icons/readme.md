@@ -1,6 +1,7 @@
 ---
 title: vime-icons
 sidebar_label: Icons
+slug: api
 ---
 
 Loads an SVG sprite and inserts it into the document.
@@ -28,7 +29,7 @@ Loads an SVG sprite and inserts it into the document.
 
 ### Used by
 
-- [vime-default-ui](../default-ui)
+- [vime-default-ui](../default-ui/readme.md)
 
 ### Graph
 

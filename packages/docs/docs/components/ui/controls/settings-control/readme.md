@@ -1,6 +1,7 @@
 ---
 title: vime-settings-control
 sidebar_label: SettingsControl
+slug: api
 ---
 
 A control for toggling the visiblity of the settings menu. This control is not displayed if no
@@ -26,22 +27,22 @@ settings (`vime-settings`) has been provided for the current player.
 
 ## Properties
 
-| Property           | Attribute           | Description                                     | Type                             | Default            |
-| ------------------ | ------------------- | ----------------------------------------------- | -------------------------------- | ------------------ |
-| `icon`             | `icon`              | The URL to an SVG element or fragment to load.  | `string`                         | `'#vime-settings'` |
-| `tooltipDirection` | `tooltip-direction` | The direction in which the tooltip should grow. | `"left" \| "right" \| undefined` | `undefined`        |
+| Property           | Attribute           | Description                                     | Type                           | Default            |
+| ------------------ | ------------------- | ----------------------------------------------- | ------------------------------ | ------------------ |
+| `icon`             | `icon`              | The URL to an SVG element or fragment to load.  | `string`                       | `'#vime-settings'` |
+| `tooltipDirection` | `tooltip-direction` | The direction in which the tooltip should grow. | `"left" ∣ "right" ∣ undefined` | `undefined`        |
 
 ## Dependencies
 
 ### Used by
 
-- [vime-default-controls](../default-controls)
+- [vime-default-controls](../default-controls/readme.md)
 
 ### Depends on
 
-- [vime-control](../control)
-- [vime-icon](../../icon)
-- [vime-tooltip](../../tooltip)
+- [vime-control](../control/readme.md)
+- [vime-icon](../../icon/readme.md)
+- [vime-tooltip](../../tooltip/readme.md)
 
 ### Graph
 

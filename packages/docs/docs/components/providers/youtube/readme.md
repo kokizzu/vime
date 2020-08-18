@@ -1,6 +1,7 @@
 ---
 title: vime-youtube
 sidebar_label: Youtube
+slug: api
 ---
 
 Enables loading, playing and controlling videos from [YouTube](https://www.youtube.com).
@@ -43,7 +44,7 @@ Enables loading, playing and controlling videos from [YouTube](https://www.youtu
 
 ### Depends on
 
-- [vime-embed](../../core/embed)
+- [vime-embed](../../core/embed/readme.md)
 
 ### Graph
 

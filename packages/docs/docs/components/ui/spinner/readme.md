@@ -1,6 +1,7 @@
 ---
 title: vime-spinner
 sidebar_label: Spinner
+slug: api
 ---
 
 Displays a loading indicator when the video is `buffering`.
@@ -41,7 +42,7 @@ Displays a loading indicator when the video is `buffering`.
 
 ### Used by
 
-- [vime-default-ui](../default-ui)
+- [vime-default-ui](../default-ui/readme.md)
 
 ### Graph
 

@@ -1,6 +1,7 @@
 ---
 title: vime-vimeo
 sidebar_label: Vimeo
+slug: api
 ---
 
 Enables loading, playing and controlling videos from [Vimeo](https://www.vimeo.com).
@@ -26,18 +27,18 @@ Enables loading, playing and controlling videos from [Vimeo](https://www.vimeo.c
 
 ## Properties
 
-| Property               | Attribute  | Description                                                                                                      | Type                  | Default     |
-| ---------------------- | ---------- | ---------------------------------------------------------------------------------------------------------------- | --------------------- | ----------- |
-| `byline`               | `byline`   | Whether to display the video owner's name.                                                                       | `boolean`             | `true`      |
-| `color`                | `color`    | The hexadecimal color value of the playback controls. The embed settings of the video might override this value. | `string \| undefined` | `undefined` |
-| `portrait`             | `portrait` | Whether to display the video owner's portrait.                                                                   | `boolean`             | `true`      |
-| `videoId` _(required)_ | `video-id` | The Vimeo resource ID of the video to load.                                                                      | `string`              | `undefined` |
+| Property               | Attribute  | Description                                                                                                      | Type                 | Default     |
+| ---------------------- | ---------- | ---------------------------------------------------------------------------------------------------------------- | -------------------- | ----------- |
+| `byline`               | `byline`   | Whether to display the video owner's name.                                                                       | `boolean`            | `true`      |
+| `color`                | `color`    | The hexadecimal color value of the playback controls. The embed settings of the video might override this value. | `string ∣ undefined` | `undefined` |
+| `portrait`             | `portrait` | Whether to display the video owner's portrait.                                                                   | `boolean`            | `true`      |
+| `videoId` _(required)_ | `video-id` | The Vimeo resource ID of the video to load.                                                                      | `string`             | `undefined` |
 
 ## Dependencies
 
 ### Depends on
 
-- [vime-embed](../../core/embed)
+- [vime-embed](../../core/embed/readme.md)
 
 ### Graph
 

@@ -1,6 +1,7 @@
 ---
 title: vime-scrim
 sidebar_label: Scrim
+slug: api
 ---
 
 A darkened overlay or gradient that covers the current video to enable controls placed on it to be
@@ -21,9 +22,9 @@ more visible.
 
 ## Properties
 
-| Property   | Attribute  | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Type                          | Default     |
-| ---------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------- | ----------- |
-| `gradient` | `gradient` | If this prop is defined, a dark gradient that smoothly fades out without being noticed will be used instead of a set color. This prop also sets the direction in which the dark end of the gradient should start. If the direction is set to `up`, the dark end of the gradient will start at the bottom of the player and fade out to the center. If the direction is set to `down`, the gradient will start at the top of the player and fade out to the center. | `"down" \| "up" \| undefined` | `undefined` |
+| Property   | Attribute  | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Type                        | Default     |
+| ---------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------- | ----------- |
+| `gradient` | `gradient` | If this prop is defined, a dark gradient that smoothly fades out without being noticed will be used instead of a set color. This prop also sets the direction in which the dark end of the gradient should start. If the direction is set to `up`, the dark end of the gradient will start at the bottom of the player and fade out to the center. If the direction is set to `down`, the gradient will start at the top of the player and fade out to the center. | `"down" ∣ "up" ∣ undefined` | `undefined` |
 
 ## CSS Custom Properties
 
@@ -35,7 +36,7 @@ more visible.
 
 ### Used by
 
-- [vime-default-controls](../controls/default-controls)
+- [vime-default-controls](../controls/default-controls/readme.md)
 
 ### Graph
 

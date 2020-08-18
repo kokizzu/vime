@@ -1,6 +1,7 @@
 ---
 title: vime-time
 sidebar_label: Time
+slug: api
 ---
 
 Formats and displays a length of time provided in seconds.
@@ -39,8 +40,8 @@ Formats and displays a length of time provided in seconds.
 
 ### Used by
 
-- [vime-current-time](../current-time)
-- [vime-end-time](../end-time)
+- [vime-current-time](../current-time/readme.md)
+- [vime-end-time](../end-time/readme.md)
 
 ### Graph
 

@@ -1,6 +1,7 @@
 ---
 title: vime-faketube
 sidebar_label: Faketube
+slug: api
 ---
 
 Fake media provider that is used for testing.

@@ -1,6 +1,7 @@
 ---
 title: vime-current-time
 sidebar_label: CurrentTime
+slug: api
 ---
 
 Formats and displays the current time of playback.
@@ -29,12 +30,12 @@ Formats and displays the current time of playback.
 
 ### Used by
 
-- [vime-default-controls](../../controls/default-controls)
-- [vime-time-progress](../time-progress)
+- [vime-default-controls](../../controls/default-controls/readme.md)
+- [vime-time-progress](../time-progress/readme.md)
 
 ### Depends on
 
-- [vime-time](../time)
+- [vime-time](../time/readme.md)
 
 ### Graph
 

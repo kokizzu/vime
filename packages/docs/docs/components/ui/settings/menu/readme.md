@@ -1,6 +1,7 @@
 ---
 title: vime-menu
 sidebar_label: Menu
+slug: api
 ---
 
 This component is responsible for containing and managing menu items and submenus. The menu is ARIA
@@ -30,12 +31,12 @@ It is rare that you will interact with this component directly, see the `vime-se
 
 ## Events
 
-| Event                  | Description                                           | Type                                                            |
-| ---------------------- | ----------------------------------------------------- | --------------------------------------------------------------- |
-| `vClose`               | Emitted when the menu has closed/is not active.       | `CustomEvent<void>`                                             |
-| `vFocusMenuItemChange` | Emitted when the currently focused menu item changes. | `CustomEvent<HTMLVimeMenuItemElement \| undefined>`             |
-| `vMenuItemsChange`     | Emitted when the menu items present changes.          | `CustomEvent<NodeListOf<HTMLVimeMenuItemElement> \| undefined>` |
-| `vOpen`                | Emitted when the menu is open/active.                 | `CustomEvent<void>`                                             |
+| Event                  | Description                                           | Type                                                           |
+| ---------------------- | ----------------------------------------------------- | -------------------------------------------------------------- |
+| `vClose`               | Emitted when the menu has closed/is not active.       | `CustomEvent<void>`                                            |
+| `vFocusMenuItemChange` | Emitted when the currently focused menu item changes. | `CustomEvent<HTMLVimeMenuItemElement ∣ undefined>`             |
+| `vMenuItemsChange`     | Emitted when the menu items present changes.          | `CustomEvent<NodeListOf<HTMLVimeMenuItemElement> ∣ undefined>` |
+| `vOpen`                | Emitted when the menu is open/active.                 | `CustomEvent<void>`                                            |
 
 ## Methods
 
@@ -83,8 +84,8 @@ Type: `Promise<HTMLVimeMenuItemElement>`
 
 ### Used by
 
-- [vime-settings](../settings)
-- [vime-submenu](../submenu)
+- [vime-settings](../settings/readme.md)
+- [vime-submenu](../submenu/readme.md)
 
 ### Graph
 

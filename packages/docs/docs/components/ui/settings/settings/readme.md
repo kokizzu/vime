@@ -1,6 +1,7 @@
 ---
 title: vime-settings
 sidebar_label: Settings
+slug: api
 ---
 
 A container for a collection of submenus and options for the player. On desktop, the settings is
@@ -79,11 +80,11 @@ Type: `Promise<void>`
 
 ### Used by
 
-- [vime-default-settings](../default-settings)
+- [vime-default-settings](../default-settings/readme.md)
 
 ### Depends on
 
-- [vime-menu](../menu)
+- [vime-menu](../menu/readme.md)
 
 ### Graph
 

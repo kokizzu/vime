@@ -1,6 +1,7 @@
 ---
 title: vime-tooltip
 sidebar_label: Tooltip
+slug: api
 ---
 
 A small pop-up box that appears when a user moves their mouse over an element. Their main purpose
@@ -28,12 +29,12 @@ is to provide a description about the function of that element.
 
 ## Properties
 
-| Property    | Attribute   | Description                                                                                                                           | Type                             | Default     |
-| ----------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------- | ----------- |
-| `active`    | `active`    | Whether the tooltip is visible or not.                                                                                                | `boolean`                        | `false`     |
-| `direction` | `direction` | Determines if the tooltip should grow according to its contents to the left/right. By default content grows outwards from the center. | `"left" \| "right" \| undefined` | `undefined` |
-| `hidden`    | `hidden`    | Whether the tooltip is displayed or not.                                                                                              | `boolean`                        | `false`     |
-| `position`  | `position`  | Determines if the tooltip appears on top/bottom of it's parent.                                                                       | `"bottom" \| "top"`              | `'top'`     |
+| Property    | Attribute   | Description                                                                                                                           | Type                           | Default     |
+| ----------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ | ----------- |
+| `active`    | `active`    | Whether the tooltip is visible or not.                                                                                                | `boolean`                      | `false`     |
+| `direction` | `direction` | Determines if the tooltip should grow according to its contents to the left/right. By default content grows outwards from the center. | `"left" ∣ "right" ∣ undefined` | `undefined` |
+| `hidden`    | `hidden`    | Whether the tooltip is displayed or not.                                                                                              | `boolean`                      | `false`     |
+| `position`  | `position`  | Determines if the tooltip appears on top/bottom of it's parent.                                                                       | `"bottom" ∣ "top"`             | `'top'`     |
 
 ## Slots
 
@@ -59,13 +60,13 @@ is to provide a description about the function of that element.
 
 ### Used by
 
-- [vime-caption-control](../controls/caption-control)
-- [vime-fullscreen-control](../controls/fullscreen-control)
-- [vime-mute-control](../controls/mute-control)
-- [vime-pip-control](../controls/pip-control)
-- [vime-playback-control](../controls/playback-control)
-- [vime-scrubber-control](../controls/scrubber-control)
-- [vime-settings-control](../controls/settings-control)
+- [vime-caption-control](../controls/caption-control/readme.md)
+- [vime-fullscreen-control](../controls/fullscreen-control/readme.md)
+- [vime-mute-control](../controls/mute-control/readme.md)
+- [vime-pip-control](../controls/pip-control/readme.md)
+- [vime-playback-control](../controls/playback-control/readme.md)
+- [vime-scrubber-control](../controls/scrubber-control/readme.md)
+- [vime-settings-control](../controls/settings-control/readme.md)
 
 ### Graph
 

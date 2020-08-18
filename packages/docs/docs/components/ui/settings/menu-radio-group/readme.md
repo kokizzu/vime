@@ -1,6 +1,7 @@
 ---
 title: vime-menu-radio-group
 sidebar_label: MenuRadioGroup
+slug: api
 ---
 
 A collection of radio buttons describing a set of related options. Only one radio button in a group
@@ -30,9 +31,9 @@ can be selected at the same time.
 
 ## Properties
 
-| Property | Attribute | Description                                | Type                  | Default     |
-| -------- | --------- | ------------------------------------------ | --------------------- | ----------- |
-| `value`  | `value`   | The current value selected for this group. | `string \| undefined` | `undefined` |
+| Property | Attribute | Description                                | Type                 | Default     |
+| -------- | --------- | ------------------------------------------ | -------------------- | ----------- |
+| `value`  | `value`   | The current value selected for this group. | `string ∣ undefined` | `undefined` |
 
 ## Events
 
@@ -50,7 +51,7 @@ can be selected at the same time.
 
 ### Used by
 
-- [vime-default-settings](../default-settings)
+- [vime-default-settings](../default-settings/readme.md)
 
 ### Graph
 

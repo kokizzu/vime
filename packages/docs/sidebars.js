@@ -1,4 +1,4 @@
-const { getComponentsSideBarItems } = require('./helpers/components');
+const { buildComponentsSideBarItems } = require('./helpers/components');
 
 module.exports = {
   docs: [
@@ -10,7 +10,7 @@ module.exports = {
     {
       type: 'category',
       label: 'Components',
-      items: getComponentsSideBarItems(),
+      items: buildComponentsSideBarItems(),
       collapsed: false
     },
   ],

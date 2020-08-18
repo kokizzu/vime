@@ -1,6 +1,7 @@
 ---
 title: vime-default-settings
 sidebar_label: DefaultSettings
+slug: api
 ---
 
 Creates a settings menu with options for changing the playback rate, quality and captions of
@@ -31,15 +32,15 @@ changing the playback rate if the current provider allows changing it (`player.c
 
 ### Used by
 
-- [vime-default-ui](../../default-ui)
+- [vime-default-ui](../../default-ui/readme.md)
 
 ### Depends on
 
-- [vime-menu-item](../menu-item)
-- [vime-menu-radio](../menu-radio)
-- [vime-submenu](../submenu)
-- [vime-menu-radio-group](../menu-radio-group)
-- [vime-settings](../settings)
+- [vime-menu-item](../menu-item/readme.md)
+- [vime-menu-radio](../menu-radio/readme.md)
+- [vime-submenu](../submenu/readme.md)
+- [vime-menu-radio-group](../menu-radio-group/readme.md)
+- [vime-settings](../settings/readme.md)
 
 ### Graph
 

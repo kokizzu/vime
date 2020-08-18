@@ -1,6 +1,7 @@
 ---
 title: vime-scrubber-control
 sidebar_label: ScrubberControl
+slug: api
 ---
 
 A control that displays the progression of playback and the amount buffered on a horizontal timeline.
@@ -45,12 +46,12 @@ timeline that has not buffered.
 
 ### Used by
 
-- [vime-default-controls](../default-controls)
+- [vime-default-controls](../default-controls/readme.md)
 
 ### Depends on
 
-- [vime-slider](../../slider)
-- [vime-tooltip](../../tooltip)
+- [vime-slider](../../slider/readme.md)
+- [vime-tooltip](../../tooltip/readme.md)
 
 ### Graph
 

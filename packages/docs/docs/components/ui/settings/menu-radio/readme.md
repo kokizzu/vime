@@ -1,6 +1,7 @@
 ---
 title: vime-menu-radio
 sidebar_label: MenuRadio
+slug: api
 ---
 
 Menu radio buttons are presented in radio groups (a collection of radio buttons describing a set
@@ -30,13 +31,13 @@ of related options). Only one radio button in a group can be selected at the sam
 
 ## Properties
 
-| Property             | Attribute      | Description                                                                                                                                                                   | Type                  | Default             |
-| -------------------- | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------- | ------------------- |
-| `badge`              | `badge`        | This can provide additional context about the value. For example, if the option is for a set of video qualities, the badge could describe whether the quality is UHD, HD etc. | `string \| undefined` | `undefined`         |
-| `checked`            | `checked`      | Whether the radio item is selected or not.                                                                                                                                    | `boolean`             | `false`             |
-| `checkedIcon`        | `checked-icon` | The URL to an SVG element or fragment to load.                                                                                                                                | `string \| undefined` | `'#vime-checkmark'` |
-| `label` _(required)_ | `label`        | The title of the radio item displayed to the user.                                                                                                                            | `string`              | `undefined`         |
-| `value` _(required)_ | `value`        | The value associated with this radio item.                                                                                                                                    | `string`              | `undefined`         |
+| Property             | Attribute      | Description                                                                                                                                                                   | Type                 | Default             |
+| -------------------- | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- | ------------------- |
+| `badge`              | `badge`        | This can provide additional context about the value. For example, if the option is for a set of video qualities, the badge could describe whether the quality is UHD, HD etc. | `string ∣ undefined` | `undefined`         |
+| `checked`            | `checked`      | Whether the radio item is selected or not.                                                                                                                                    | `boolean`            | `false`             |
+| `checkedIcon`        | `checked-icon` | The URL to an SVG element or fragment to load.                                                                                                                                | `string ∣ undefined` | `'#vime-checkmark'` |
+| `label` _(required)_ | `label`        | The title of the radio item displayed to the user.                                                                                                                            | `string`             | `undefined`         |
+| `value` _(required)_ | `value`        | The value associated with this radio item.                                                                                                                                    | `string`             | `undefined`         |
 
 ## Events
 
@@ -48,11 +49,11 @@ of related options). Only one radio button in a group can be selected at the sam
 
 ### Used by
 
-- [vime-default-settings](../default-settings)
+- [vime-default-settings](../default-settings/readme.md)
 
 ### Depends on
 
-- [vime-menu-item](../menu-item)
+- [vime-menu-item](../menu-item/readme.md)
 
 ### Graph
 

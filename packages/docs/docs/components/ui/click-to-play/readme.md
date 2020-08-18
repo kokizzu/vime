@@ -1,6 +1,7 @@
 ---
 title: vime-click-to-play
 sidebar_label: ClickToPlay
+slug: api
 ---
 
 Enables toggling playback by clicking the player.
@@ -28,7 +29,7 @@ Enables toggling playback by clicking the player.
 
 ### Used by
 
-- [vime-default-ui](../default-ui)
+- [vime-default-ui](../default-ui/readme.md)
 
 ### Graph
 

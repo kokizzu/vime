@@ -1,6 +1,7 @@
 ---
 title: vime-dailymotion
 sidebar_label: Dailymotion
+slug: api
 ---
 
 Enables loading, playing and controlling videos from [Dailymotion](https://www.dailymotion.com).
@@ -27,22 +28,22 @@ Enables loading, playing and controlling videos from [Dailymotion](https://www.d
 
 ## Properties
 
-| Property               | Attribute               | Description                                                                                                                                     | Type                  | Default     |
-| ---------------------- | ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | --------------------- | ----------- |
-| `color`                | `color`                 | Change the default highlight color used in the controls (hex value without the leading #). Color set in the Partner HQ will override this prop. | `string \| undefined` | `undefined` |
-| `shouldAutoplayQueue`  | `should-autoplay-queue` | Whether to automatically play the next video in the queue.                                                                                      | `boolean`             | `false`     |
-| `showDailymotionLogo`  | `show-dailymotion-logo` | Whether to display the Dailymotion logo.                                                                                                        | `boolean`             | `false`     |
-| `showShareButtons`     | `show-share-buttons`    | Whether to show buttons for sharing the video.                                                                                                  | `boolean`             | `false`     |
-| `showUpNextQueue`      | `show-up-next-queue`    | Whether to show the 'Up Next' queue.                                                                                                            | `boolean`             | `false`     |
-| `showVideoInfo`        | `show-video-info`       | Whether to show video information (title and owner) on the start screen.                                                                        | `boolean`             | `true`      |
-| `syndication`          | `syndication`           | Forwards your syndication key to the player.                                                                                                    | `string \| undefined` | `undefined` |
-| `videoId` _(required)_ | `video-id`              | The Dailymotion resource ID of the video to load.                                                                                               | `string`              | `undefined` |
+| Property               | Attribute               | Description                                                                                                                                     | Type                 | Default     |
+| ---------------------- | ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- | ----------- |
+| `color`                | `color`                 | Change the default highlight color used in the controls (hex value without the leading #). Color set in the Partner HQ will override this prop. | `string ∣ undefined` | `undefined` |
+| `shouldAutoplayQueue`  | `should-autoplay-queue` | Whether to automatically play the next video in the queue.                                                                                      | `boolean`            | `false`     |
+| `showDailymotionLogo`  | `show-dailymotion-logo` | Whether to display the Dailymotion logo.                                                                                                        | `boolean`            | `false`     |
+| `showShareButtons`     | `show-share-buttons`    | Whether to show buttons for sharing the video.                                                                                                  | `boolean`            | `false`     |
+| `showUpNextQueue`      | `show-up-next-queue`    | Whether to show the 'Up Next' queue.                                                                                                            | `boolean`            | `false`     |
+| `showVideoInfo`        | `show-video-info`       | Whether to show video information (title and owner) on the start screen.                                                                        | `boolean`            | `true`      |
+| `syndication`          | `syndication`           | Forwards your syndication key to the player.                                                                                                    | `string ∣ undefined` | `undefined` |
+| `videoId` _(required)_ | `video-id`              | The Dailymotion resource ID of the video to load.                                                                                               | `string`             | `undefined` |
 
 ## Dependencies
 
 ### Depends on
 
-- [vime-embed](../../core/embed)
+- [vime-embed](../../core/embed/readme.md)
 
 ### Graph
 

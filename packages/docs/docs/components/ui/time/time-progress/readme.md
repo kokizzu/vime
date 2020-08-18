@@ -1,6 +1,7 @@
 ---
 title: vime-time-progress
 sidebar_label: TimeProgress
+slug: api
 ---
 
 Formats and displays the progression of playback as `currentTime (separator) endTime`.
@@ -36,12 +37,12 @@ Formats and displays the progression of playback as `currentTime (separator) end
 
 ### Used by
 
-- [vime-default-controls](../../controls/default-controls)
+- [vime-default-controls](../../controls/default-controls/readme.md)
 
 ### Depends on
 
-- [vime-current-time](../current-time)
-- [vime-end-time](../end-time)
+- [vime-current-time](../current-time/readme.md)
+- [vime-end-time](../end-time/readme.md)
 
 ### Graph
 

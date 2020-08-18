@@ -1,6 +1,7 @@
 ---
 title: vime-ui
 sidebar_label: UI
+slug: api
 ---
 
 Simple container that holds a collection of user interface components.
@@ -27,7 +28,7 @@ is `true`, and the player is not in fullscreen mode.
 
 ### Used by
 
-- [vime-default-ui](../default-ui)
+- [vime-default-ui](../default-ui/readme.md)
 
 ### Graph
 

@@ -1,6 +1,7 @@
 ---
 title: vime-slider
 sidebar_label: Slider
+slug: api
 ---
 
 A custom styled and ARIA friendly `input[type="range"]` component for inputting numeric values.
@@ -17,14 +18,14 @@ at https://github.com/sampotts/rangetouch).
 
 ## Properties
 
-| Property    | Attribute    | Description                                                                                | Type                  | Default     |
-| ----------- | ------------ | ------------------------------------------------------------------------------------------ | --------------------- | ----------- |
-| `label`     | `label`      | A human-readable label for the purpose of the slider.                                      | `string \| undefined` | `undefined` |
-| `max`       | `max`        | The greatest permitted value.                                                              | `number`              | `10`        |
-| `min`       | `min`        | The lowest value in the range of permitted values.                                         | `number`              | `0`         |
-| `step`      | `step`       | A number that specifies the granularity that the value must adhere to.                     | `number`              | `1`         |
-| `value`     | `value`      | The current value.                                                                         | `number`              | `5`         |
-| `valueText` | `value-text` | Human-readable text alternative for the current value. Defaults to `value:max` percentage. | `string \| undefined` | `undefined` |
+| Property    | Attribute    | Description                                                                                | Type                 | Default     |
+| ----------- | ------------ | ------------------------------------------------------------------------------------------ | -------------------- | ----------- |
+| `label`     | `label`      | A human-readable label for the purpose of the slider.                                      | `string ∣ undefined` | `undefined` |
+| `max`       | `max`        | The greatest permitted value.                                                              | `number`             | `10`        |
+| `min`       | `min`        | The lowest value in the range of permitted values.                                         | `number`             | `0`         |
+| `step`      | `step`       | A number that specifies the granularity that the value must adhere to.                     | `number`             | `1`         |
+| `value`     | `value`      | The current value.                                                                         | `number`             | `5`         |
+| `valueText` | `value-text` | Human-readable text alternative for the current value. Defaults to `value:max` percentage. | `string ∣ undefined` | `undefined` |
 
 ## Events
 
@@ -49,8 +50,8 @@ at https://github.com/sampotts/rangetouch).
 
 ### Used by
 
-- [vime-scrubber-control](../controls/scrubber-control)
-- [vime-volume-control](../controls/volume-control)
+- [vime-scrubber-control](../controls/scrubber-control/readme.md)
+- [vime-volume-control](../controls/volume-control/readme.md)
 
 ### Graph
 

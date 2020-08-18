@@ -1,6 +1,7 @@
 ---
 title: vime-icon
 sidebar_label: Icon
+slug: api
 ---
 
 Renders and displays an SVG icon. The SVG markup can be passed in directly or it can be loaded via
@@ -23,12 +24,12 @@ property.
 
 ## Properties
 
-| Property  | Attribute | Description                                                                       | Type                  | Default     |
-| --------- | --------- | --------------------------------------------------------------------------------- | --------------------- | ----------- |
-| `color`   | `color`   | The color (fill) of the icon.                                                     | `string \| undefined` | `undefined` |
-| `href`    | `href`    | The URL to an SVG element or fragment to load.                                    | `string \| undefined` | `undefined` |
-| `opacity` | `opacity` | The amount of transparency to add to the icon.                                    | `number`              | `1`         |
-| `scale`   | `scale`   | The amount to scale the size of the icon (respecting aspect ratio) up or down by. | `number`              | `1`         |
+| Property  | Attribute | Description                                                                       | Type                 | Default     |
+| --------- | --------- | --------------------------------------------------------------------------------- | -------------------- | ----------- |
+| `color`   | `color`   | The color (fill) of the icon.                                                     | `string ∣ undefined` | `undefined` |
+| `href`    | `href`    | The URL to an SVG element or fragment to load.                                    | `string ∣ undefined` | `undefined` |
+| `opacity` | `opacity` | The amount of transparency to add to the icon.                                    | `number`             | `1`         |
+| `scale`   | `scale`   | The amount to scale the size of the icon (respecting aspect ratio) up or down by. | `number`             | `1`         |
 
 ## Slots
 
@@ -47,13 +48,13 @@ property.
 
 ### Used by
 
-- [vime-caption-control](../controls/caption-control)
-- [vime-fullscreen-control](../controls/fullscreen-control)
-- [vime-menu-item](../settings/menu-item)
-- [vime-mute-control](../controls/mute-control)
-- [vime-pip-control](../controls/pip-control)
-- [vime-playback-control](../controls/playback-control)
-- [vime-settings-control](../controls/settings-control)
+- [vime-caption-control](../controls/caption-control/readme.md)
+- [vime-fullscreen-control](../controls/fullscreen-control/readme.md)
+- [vime-menu-item](../settings/menu-item/readme.md)
+- [vime-mute-control](../controls/mute-control/readme.md)
+- [vime-pip-control](../controls/pip-control/readme.md)
+- [vime-playback-control](../controls/playback-control/readme.md)
+- [vime-settings-control](../controls/settings-control/readme.md)
 
 ### Graph
 

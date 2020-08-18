@@ -1,6 +1,7 @@
 ---
 title: vime-live-indicator
 sidebar_label: LiveIndicator
+slug: api
 ---
 
 This can be used to indicate to the user that the current media is being streamed live.
@@ -32,7 +33,7 @@ This can be used to indicate to the user that the current media is being streame
 
 ### Used by
 
-- [vime-default-controls](../controls/default-controls)
+- [vime-default-controls](../controls/default-controls/readme.md)
 
 ### Graph
 

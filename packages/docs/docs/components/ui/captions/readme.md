@@ -1,6 +1,7 @@
 ---
 title: vime-captions
 sidebar_label: Captions
+slug: api
 ---
 
 Renders and displays VTT cues by hooking into the `textTracks` player property. This is a simple
@@ -34,10 +35,10 @@ to be used in combination with the native HTML5 player controls.
 
 ## Events
 
-| Event          | Description                                                                                                             | Type                                  |
-| -------------- | ----------------------------------------------------------------------------------------------------------------------- | ------------------------------------- |
-| `vCuesChange`  | Emitted when the active cues change. A cue is active when `currentTime >= cue.startTime && currentTime <= cue.endTime`. | `CustomEvent<TextTrackCue[]>`         |
-| `vTrackChange` | Emitted when the current track changes.                                                                                 | `CustomEvent<TextTrack \| undefined>` |
+| Event          | Description                                                                                                             | Type                                 |
+| -------------- | ----------------------------------------------------------------------------------------------------------------------- | ------------------------------------ |
+| `vCuesChange`  | Emitted when the active cues change. A cue is active when `currentTime >= cue.startTime && currentTime <= cue.endTime`. | `CustomEvent<TextTrackCue[]>`        |
+| `vTrackChange` | Emitted when the current track changes.                                                                                 | `CustomEvent<TextTrack ∣ undefined>` |
 
 ## CSS Custom Properties
 
@@ -56,7 +57,7 @@ to be used in combination with the native HTML5 player controls.
 
 ### Used by
 
-- [vime-default-ui](../default-ui)
+- [vime-default-ui](../default-ui/readme.md)
 
 ### Graph
 

@@ -1,6 +1,7 @@
 ---
 title: vime-default-controls
 sidebar_label: DefaultControls
+slug: api
 ---
 
 Default set of controls for when you're in a hurry. The controls displayed depend on whether
@@ -33,25 +34,25 @@ the media is audio/video/live, and whether the device is mobile/desktop.
 
 ### Used by
 
-- [vime-default-ui](../../default-ui)
+- [vime-default-ui](../../default-ui/readme.md)
 
 ### Depends on
 
-- [vime-controls](../controls)
-- [vime-playback-control](../playback-control)
-- [vime-volume-control](../volume-control)
-- [vime-current-time](../../time/current-time)
-- [vime-control-spacer](../control-spacer)
-- [vime-scrubber-control](../scrubber-control)
-- [vime-live-indicator](../../live-indicator)
-- [vime-end-time](../../time/end-time)
-- [vime-settings-control](../settings-control)
-- [vime-control-group](../control-group)
-- [vime-fullscreen-control](../fullscreen-control)
-- [vime-scrim](../../scrim)
-- [vime-caption-control](../caption-control)
-- [vime-time-progress](../../time/time-progress)
-- [vime-pip-control](../pip-control)
+- [vime-controls](../controls/readme.md)
+- [vime-playback-control](../playback-control/readme.md)
+- [vime-volume-control](../volume-control/readme.md)
+- [vime-current-time](../../time/current-time/readme.md)
+- [vime-control-spacer](../control-spacer/readme.md)
+- [vime-scrubber-control](../scrubber-control/readme.md)
+- [vime-live-indicator](../../live-indicator/readme.md)
+- [vime-end-time](../../time/end-time/readme.md)
+- [vime-settings-control](../settings-control/readme.md)
+- [vime-control-group](../control-group/readme.md)
+- [vime-fullscreen-control](../fullscreen-control/readme.md)
+- [vime-scrim](../../scrim/readme.md)
+- [vime-caption-control](../caption-control/readme.md)
+- [vime-time-progress](../../time/time-progress/readme.md)
+- [vime-pip-control](../pip-control/readme.md)
 
 ### Graph
 

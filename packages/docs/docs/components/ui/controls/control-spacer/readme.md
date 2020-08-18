@@ -1,6 +1,7 @@
 ---
 title: vime-control-spacer
 sidebar_label: ControlSpacer
+slug: api
 ---
 
 Used to space controls out vertically/horizontally. Under the hood it's simply `flex: 1`.
@@ -29,7 +30,7 @@ Used to space controls out vertically/horizontally. Under the hood it's simply `
 
 ### Used by
 
-- [vime-default-controls](../default-controls)
+- [vime-default-controls](../default-controls/readme.md)
 
 ### Graph
 

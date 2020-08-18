@@ -1,6 +1,7 @@
 ---
 title: vime-embed
 sidebar_label: Embed
+slug: api
 ---
 
 Embeds an external media player and enables interacting with it via `postMessage`.
@@ -28,14 +29,14 @@ Embeds an external media player and enables interacting with it via `postMessage
 
 ## Properties
 
-| Property         | Attribute     | Description                                                                                                                     | Type                                                                | Default     |
-| ---------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | ----------- |
-| `decoder`        | --            | A function which accepts the raw message received from the embedded media player via `postMessage` and converts it into a POJO. | `((data: string) => Record<string, any> \| undefined) \| undefined` | `undefined` |
-| `embedSrc`       | `embed-src`   | A URL that will load the external player and media (Eg: https://www.youtube.com/embed/DyTCOwB0DVw).                             | `string`                                                            | `''`        |
-| `mediaTitle`     | `media-title` | The title of the current media so it can be set on the inner `iframe` for screen readers.                                       | `string`                                                            | `''`        |
-| `origin`         | `origin`      | Where the src request had originated from without any path information.                                                         | `string \| undefined`                                               | `undefined` |
-| `params`         | --            | The parameters to pass to the embedded player. These are encoded as a query string and appended to the `embedSrc` prop.         | `{ [x: string]: any; }`                                             | `{}`        |
-| `preconnections` | --            | A collection of URLs to that the browser should immediately start establishing a connection with.                               | `string[]`                                                          | `[]`        |
+| Property         | Attribute     | Description                                                                                                                     | Type                                                              | Default     |
+| ---------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- | ----------- |
+| `decoder`        | --            | A function which accepts the raw message received from the embedded media player via `postMessage` and converts it into a POJO. | `((data: string) => Record<string, any> ∣ undefined) ∣ undefined` | `undefined` |
+| `embedSrc`       | `embed-src`   | A URL that will load the external player and media (Eg: https://www.youtube.com/embed/DyTCOwB0DVw).                             | `string`                                                          | `''`        |
+| `mediaTitle`     | `media-title` | The title of the current media so it can be set on the inner `iframe` for screen readers.                                       | `string`                                                          | `''`        |
+| `origin`         | `origin`      | Where the src request had originated from without any path information.                                                         | `string ∣ undefined`                                              | `undefined` |
+| `params`         | --            | The parameters to pass to the embedded player. These are encoded as a query string and appended to the `embedSrc` prop.         | `{ [x: string]: any; }`                                           | `{}`        |
+| `preconnections` | --            | A collection of URLs to that the browser should immediately start establishing a connection with.                               | `string[]`                                                        | `[]`        |
 
 ## Events
 
@@ -59,9 +60,9 @@ Type: `Promise<void>`
 
 ### Used by
 
-- [vime-dailymotion](../../providers/dailymotion)
-- [vime-vimeo](../../providers/vimeo)
-- [vime-youtube](../../providers/youtube)
+- [vime-dailymotion](../../providers/dailymotion/readme.md)
+- [vime-vimeo](../../providers/vimeo/readme.md)
+- [vime-youtube](../../providers/youtube/readme.md)
 
 ### Graph
 

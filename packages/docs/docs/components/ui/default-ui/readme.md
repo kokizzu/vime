@@ -1,6 +1,7 @@
 ---
 title: vime-default-ui
 sidebar_label: DefaultUI
+slug: api
 ---
 
 This component is a shorthand way to setup the entire default vime user interface, such as controls,
@@ -21,14 +22,14 @@ settings, captions and so on.
 
 ### Depends on
 
-- [vime-ui](../ui)
-- [vime-icons](../icons)
-- [vime-click-to-play](../click-to-play)
-- [vime-captions](../captions)
-- [vime-poster](../poster)
-- [vime-spinner](../spinner)
-- [vime-default-controls](../controls/default-controls)
-- [vime-default-settings](../settings/default-settings)
+- [vime-ui](../ui/readme.md)
+- [vime-icons](../icons/readme.md)
+- [vime-click-to-play](../click-to-play/readme.md)
+- [vime-captions](../captions/readme.md)
+- [vime-poster](../poster/readme.md)
+- [vime-spinner](../spinner/readme.md)
+- [vime-default-controls](../controls/default-controls/readme.md)
+- [vime-default-settings](../settings/default-settings/readme.md)
 
 ### Graph
 
