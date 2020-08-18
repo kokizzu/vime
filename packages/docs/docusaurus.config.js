@@ -23,8 +23,9 @@ module.exports = {
         },
         {
           href: 'https://github.com/vime-js/vime',
-          label: 'GitHub',
           position: 'right',
+          className: 'header-github-link',
+          'aria-label': 'GitHub repository',
         },
       ],
     },
@@ -35,7 +36,7 @@ module.exports = {
       {
         docs: {
           routeBasePath: '/',
-          homePageId: 'introduction',
+          homePageId: 'welcome/introduction',
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
             'https://github.com/vime-js/vime/edit/master/packages/docs/',
