@@ -347,7 +347,7 @@ export namespace Components {
          */
         "origin"?: string;
         /**
-          * The parameters to pass to the embedded player which are appended to the `embedSrc` prop. These  can be passed in as a query string or object.
+          * The parameters to pass to the embedded player which are appended to the `embedSrc` prop. These can be passed in as a query string or object.
          */
         "params": string | Params;
         /**
@@ -2049,7 +2049,7 @@ declare namespace LocalJSX {
          */
         "origin"?: string;
         /**
-          * The parameters to pass to the embedded player which are appended to the `embedSrc` prop. These  can be passed in as a query string or object.
+          * The parameters to pass to the embedded player which are appended to the `embedSrc` prop. These can be passed in as a query string or object.
          */
         "params"?: string | Params;
         /**
