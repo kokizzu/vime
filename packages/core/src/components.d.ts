@@ -328,6 +328,34 @@ export namespace Components {
         "textTracks"?: PlayerProps[PlayerProp.TextTracks];
     }
     interface VimeDefaultUi {
+        /**
+          * Whether the custom captions UI should not be loaded.
+         */
+        "noCaptions": boolean;
+        /**
+          * Whether clicking the player should not toggle playback.
+         */
+        "noClickToPlay": boolean;
+        /**
+          * Whether the custom default controls should not be loaded.
+         */
+        "noControls": boolean;
+        /**
+          * Whether the default icons should not be loaded.
+         */
+        "noIcons": boolean;
+        /**
+          * Whether the custom poster UI should not be loaded.
+         */
+        "noPoster": boolean;
+        /**
+          * Whether the custom default settings menu should not be loaded.
+         */
+        "noSettings": boolean;
+        /**
+          * Whether the custom spinner UI should not be loaded.
+         */
+        "noSpinner": boolean;
     }
     interface VimeEmbed {
         /**
@@ -2018,6 +2046,34 @@ declare namespace LocalJSX {
         "textTracks"?: PlayerProps[PlayerProp.TextTracks];
     }
     interface VimeDefaultUi {
+        /**
+          * Whether the custom captions UI should not be loaded.
+         */
+        "noCaptions"?: boolean;
+        /**
+          * Whether clicking the player should not toggle playback.
+         */
+        "noClickToPlay"?: boolean;
+        /**
+          * Whether the custom default controls should not be loaded.
+         */
+        "noControls"?: boolean;
+        /**
+          * Whether the default icons should not be loaded.
+         */
+        "noIcons"?: boolean;
+        /**
+          * Whether the custom poster UI should not be loaded.
+         */
+        "noPoster"?: boolean;
+        /**
+          * Whether the custom default settings menu should not be loaded.
+         */
+        "noSettings"?: boolean;
+        /**
+          * Whether the custom spinner UI should not be loaded.
+         */
+        "noSpinner"?: boolean;
     }
     interface VimeEmbed {
         /**
