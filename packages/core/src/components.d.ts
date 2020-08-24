@@ -1089,6 +1089,11 @@ export namespace Components {
          */
         "textTracks"?: TextTrackList;
         /**
+          * This property has no role other than scoping CSS selectors.
+          * @inheritDoc
+         */
+        "theme"?: string;
+        /**
           * Toggles the visibility of the captions.
           * @inheritdoc
          */
@@ -2846,6 +2851,11 @@ declare namespace LocalJSX {
          */
         "onVTextTracksChange"?: (event: CustomEvent<PlayerProps[PlayerProp.textTracks]>) => void;
         /**
+          * Emitted when the `theme` prop changes value.
+          * @inheritDoc
+         */
+        "onVThemeChange"?: (event: CustomEvent<PlayerProps[PlayerProp.theme]>) => void;
+        /**
           * Emitted when the `isTouch` prop changes value.
           * @inheritDoc
          */
@@ -2925,6 +2935,11 @@ declare namespace LocalJSX {
           * @inheritDoc
          */
         "textTracks"?: TextTrackList;
+        /**
+          * This property has no role other than scoping CSS selectors.
+          * @inheritDoc
+         */
+        "theme"?: string;
         /**
           * `@readonly` Contains each language and it's respective translation map.
           * @inheritDoc
