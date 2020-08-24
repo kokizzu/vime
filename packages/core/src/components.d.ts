@@ -861,6 +861,11 @@ export namespace Components {
          */
         "debug": boolean;
         /**
+          * `@readonly` Whether the player has disconnected from the DOM and been destroyed.
+          * @inheritDoc
+         */
+        "destroyed": boolean;
+        /**
           * `@readonly` A `double` indicating the total playback length of the media in seconds. Defaults to `-1` if no media has been loaded. If the media is being streamed live then the duration is equal to `Infinity`.
           * @inheritDoc
          */
@@ -994,6 +999,11 @@ export namespace Components {
           * @inheritDoc
          */
         "mediaType"?: MediaType;
+        /**
+          * `@readonly` Whether the player has mounted the DOM.
+          * @inheritDoc
+         */
+        "mounted": boolean;
         /**
           * Whether the audio is muted or not.
           * @inheritDoc
@@ -2552,6 +2562,11 @@ declare namespace LocalJSX {
          */
         "debug"?: boolean;
         /**
+          * `@readonly` Whether the player has disconnected from the DOM and been destroyed.
+          * @inheritDoc
+         */
+        "destroyed"?: boolean;
+        /**
           * `@readonly` A `double` indicating the total playback length of the media in seconds. Defaults to `-1` if no media has been loaded. If the media is being streamed live then the duration is equal to `Infinity`.
           * @inheritDoc
          */
@@ -2652,6 +2667,11 @@ declare namespace LocalJSX {
          */
         "mediaType"?: MediaType;
         /**
+          * `@readonly` Whether the player has mounted the DOM.
+          * @inheritDoc
+         */
+        "mounted"?: boolean;
+        /**
           * Whether the audio is muted or not.
           * @inheritDoc
          */
@@ -2690,6 +2710,11 @@ declare namespace LocalJSX {
           * @inheritDoc
          */
         "onVCurrentTimeChange"?: (event: CustomEvent<PlayerProps[PlayerProp.CurrentTime]>) => void;
+        /**
+          * Emitted when the player has disconnected from the DOM and been destroyed.
+          * @inheritDoc
+         */
+        "onVDestroyed"?: (event: CustomEvent<void>) => void;
         /**
           * Emitted when the `duration` prop changes value.
           * @inheritDoc
@@ -2735,6 +2760,11 @@ declare namespace LocalJSX {
           * @inheritDoc
          */
         "onVMediaTypeChange"?: (event: CustomEvent<PlayerProps[PlayerProp.MediaType]>) => void;
+        /**
+          * Emitted when the player has mounted the DOM.
+          * @inheritDoc
+         */
+        "onVMounted"?: (event: CustomEvent<void>) => void;
         /**
           * Emitted when the `muted` prop changes value.
           * @inheritDoc
