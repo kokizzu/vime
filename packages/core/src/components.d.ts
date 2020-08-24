@@ -38,7 +38,7 @@ export namespace Components {
         "willAttach": boolean;
     }
     interface VimeCaptionControl {
-        "currentCaption"?: PlayerProps[PlayerProp.CurrentCaption];
+        "currentCaption"?: PlayerProps[PlayerProp.currentCaption];
         /**
           * The URL to an SVG element or fragment to load.
          */
@@ -47,8 +47,8 @@ export namespace Components {
           * Whether the tooltip should not be displayed.
          */
         "hideTooltip": boolean;
-        "i18n": PlayerProps[PlayerProp.I18N];
-        "isCaptionsActive": PlayerProps[PlayerProp.IsCaptionsActive];
+        "i18n": PlayerProps[PlayerProp.i18n];
+        "isCaptionsActive": PlayerProps[PlayerProp.isCaptionsActive];
         /**
           * A slash (`/`) seperated string of JS keyboard keys (`KeyboardEvent.key`), that when caught in a `keydown` event, will trigger a `click` event on the control.
           * @inheritdoc
@@ -76,14 +76,14 @@ export namespace Components {
           * Whether the captions should be visible or not.
          */
         "hidden": boolean;
-        "isControlsActive": PlayerProps[PlayerProp.IsControlsActive];
-        "isVideoView": PlayerProps[PlayerProp.IsVideoView];
-        "playbackStarted": PlayerProps[PlayerProp.PlaybackStarted];
-        "textTracks"?: PlayerProps[PlayerProp.TextTracks];
+        "isControlsActive": PlayerProps[PlayerProp.isControlsActive];
+        "isVideoView": PlayerProps[PlayerProp.isVideoView];
+        "playbackStarted": PlayerProps[PlayerProp.playbackStarted];
+        "textTracks"?: PlayerProps[PlayerProp.textTracks];
     }
     interface VimeClickToPlay {
-        "isVideoView": PlayerProps[PlayerProp.IsVideoView];
-        "paused": PlayerProps[PlayerProp.Paused];
+        "isVideoView": PlayerProps[PlayerProp.isVideoView];
+        "paused": PlayerProps[PlayerProp.paused];
         /**
           * By default this is disabled on mobile to not interfere with playback, set this to `true` to enable it.
          */
@@ -102,7 +102,7 @@ export namespace Components {
           * The `id` attribute of the control.
          */
         "identifier"?: string;
-        "isTouch": PlayerProps[PlayerProp.IsTouch];
+        "isTouch": PlayerProps[PlayerProp.isTouch];
         /**
           * A slash (`/`) seperated string of JS keyboard keys (`KeyboardEvent.key`), that when caught in a `keydown` event, will trigger a `click` event on the control.
           * @inheritdoc
@@ -166,9 +166,9 @@ export namespace Components {
           * Whether the controls should show/hide when paused. Audio players are not effected by this prop.
          */
         "hideWhenPaused": boolean;
-        "isAudioView": PlayerProps[PlayerProp.IsAudioView];
-        "isControlsActive": PlayerProps[PlayerProp.IsControlsActive];
-        "isSettingsActive": PlayerProps[PlayerProp.IsSettingsActive];
+        "isAudioView": PlayerProps[PlayerProp.isAudioView];
+        "isControlsActive": PlayerProps[PlayerProp.isControlsActive];
+        "isSettingsActive": PlayerProps[PlayerProp.isSettingsActive];
         /**
           * Sets the `justify-content` flex property that aligns the individual controls on the main-axis.
          */
@@ -178,13 +178,13 @@ export namespace Components {
   | 'space-around'
   | 'space-between'
   | 'space-evenly';
-        "paused": PlayerProps[PlayerProp.Paused];
+        "paused": PlayerProps[PlayerProp.paused];
         /**
           * Pins the controls to the defined position inside the video player. This has no effect when the view is of type `audio`.
          */
         "pin": 'topLeft' | 'topRight' | 'bottomLeft' | 'bottomRight' | 'center';
-        "playbackReady": PlayerProps[PlayerProp.PlaybackReady];
-        "playbackStarted": PlayerProps[PlayerProp.PlaybackStarted];
+        "playbackReady": PlayerProps[PlayerProp.playbackReady];
+        "playbackStarted": PlayerProps[PlayerProp.playbackStarted];
         /**
           * Whether the controls should wait for playback to start before being shown. Audio players are not effected by this prop.
          */
@@ -195,8 +195,8 @@ export namespace Components {
           * Whether the time should always show the hours unit, even if the time is less than 1 hour (eg: `20:35` -> `00:20:35`).
          */
         "alwaysShowHours": boolean;
-        "currentTime": PlayerProps[PlayerProp.CurrentTime];
-        "i18n": PlayerProps[PlayerProp.I18N];
+        "currentTime": PlayerProps[PlayerProp.currentTime];
+        "i18n": PlayerProps[PlayerProp.i18n];
     }
     interface VimeDailymotion {
         "autoplay": boolean;
@@ -308,24 +308,24 @@ export namespace Components {
           * Whether the controls should show/hide when paused. Audio players are not effected by this prop.
          */
         "hideWhenPaused": boolean;
-        "isAudioView": PlayerProps[PlayerProp.IsAudioView];
-        "isLive": PlayerProps[PlayerProp.IsLive];
-        "isMobile": PlayerProps[PlayerProp.IsMobile];
-        "isVideoView": PlayerProps[PlayerProp.IsVideoView];
+        "isAudioView": PlayerProps[PlayerProp.isAudioView];
+        "isLive": PlayerProps[PlayerProp.isLive];
+        "isMobile": PlayerProps[PlayerProp.isMobile];
+        "isVideoView": PlayerProps[PlayerProp.isVideoView];
         /**
           * Whether the controls should wait for playback to start before being shown. Audio players are not effected by this prop.
          */
         "waitForPlaybackStart": boolean;
     }
     interface VimeDefaultSettings {
-        "currentCaption"?: PlayerProps[PlayerProp.CurrentCaption];
-        "i18n": PlayerProps[PlayerProp.I18N];
-        "isCaptionsActive": PlayerProps[PlayerProp.IsCaptionsActive];
-        "playbackQualities": PlayerProps[PlayerProp.PlaybackQualities];
-        "playbackQuality"?: PlayerProps[PlayerProp.PlaybackQuality];
-        "playbackRate": PlayerProps[PlayerProp.PlaybackRate];
-        "playbackRates": PlayerProps[PlayerProp.PlaybackRates];
-        "textTracks"?: PlayerProps[PlayerProp.TextTracks];
+        "currentCaption"?: PlayerProps[PlayerProp.currentCaption];
+        "i18n": PlayerProps[PlayerProp.i18n];
+        "isCaptionsActive": PlayerProps[PlayerProp.isCaptionsActive];
+        "playbackQualities": PlayerProps[PlayerProp.playbackQualities];
+        "playbackQuality"?: PlayerProps[PlayerProp.playbackQuality];
+        "playbackRate": PlayerProps[PlayerProp.playbackRate];
+        "playbackRates": PlayerProps[PlayerProp.playbackRates];
+        "textTracks"?: PlayerProps[PlayerProp.textTracks];
     }
     interface VimeDefaultUi {
         /**
@@ -392,8 +392,8 @@ export namespace Components {
           * Whether the time should always show the hours unit, even if the time is less than 1 hour (eg: `20:35` -> `00:20:35`).
          */
         "alwaysShowHours": boolean;
-        "duration": PlayerProps[PlayerProp.Duration];
-        "i18n": PlayerProps[PlayerProp.I18N];
+        "duration": PlayerProps[PlayerProp.duration];
+        "i18n": PlayerProps[PlayerProp.i18n];
     }
     interface VimeFaketube {
         "autoplay": boolean;
@@ -487,14 +487,14 @@ export namespace Components {
           * Whether the tooltip should not be displayed.
          */
         "hideTooltip": boolean;
-        "i18n": PlayerProps[PlayerProp.I18N];
-        "isFullscreenActive": PlayerProps[PlayerProp.IsFullscreenActive];
+        "i18n": PlayerProps[PlayerProp.i18n];
+        "isFullscreenActive": PlayerProps[PlayerProp.isFullscreenActive];
         /**
           * A slash (`/`) seperated string of JS keyboard keys (`KeyboardEvent.key`), that when caught in a `keydown` event, will trigger a `click` event on the control.
           * @inheritdoc
          */
         "keys"?: string;
-        "playbackReady": PlayerProps[PlayerProp.PlaybackReady];
+        "playbackReady": PlayerProps[PlayerProp.playbackReady];
         /**
           * Scale the size of the control up/down by the amount given.
          */
@@ -579,8 +579,8 @@ export namespace Components {
         "href": string;
     }
     interface VimeLiveIndicator {
-        "i18n": PlayerProps[PlayerProp.I18N];
-        "isLive": PlayerProps[PlayerProp.IsLive];
+        "i18n": PlayerProps[PlayerProp.i18n];
+        "isLive": PlayerProps[PlayerProp.isLive];
     }
     interface VimeMenu {
         /**
@@ -637,7 +637,7 @@ export namespace Components {
           * The `id` attribute of the item.
          */
         "identifier"?: string;
-        "isTouch": PlayerProps[PlayerProp.IsTouch];
+        "isTouch": PlayerProps[PlayerProp.isTouch];
         /**
           * The label/title of the item.
          */
@@ -684,7 +684,7 @@ export namespace Components {
           * The URL to an SVG element or fragment.
          */
         "highVolumeIcon": string;
-        "i18n": PlayerProps[PlayerProp.I18N];
+        "i18n": PlayerProps[PlayerProp.i18n];
         /**
           * A slash (`/`) seperated string of JS keyboard keys (`KeyboardEvent.key`), that when caught in a `keydown` event, will trigger a `click` event on the control.
           * @inheritdoc
@@ -694,7 +694,7 @@ export namespace Components {
           * The URL to an SVG element or fragment.
          */
         "lowVolumeIcon": string;
-        "muted": PlayerProps[PlayerProp.Muted];
+        "muted": PlayerProps[PlayerProp.muted];
         /**
           * The URL to an SVG element or fragment.
          */
@@ -707,7 +707,7 @@ export namespace Components {
           * The direction in which the tooltip should grow.
          */
         "tooltipDirection": TooltipDirection;
-        "volume": PlayerProps[PlayerProp.Volume];
+        "volume": PlayerProps[PlayerProp.volume];
     }
     interface VimePipControl {
         /**
@@ -722,14 +722,14 @@ export namespace Components {
           * Whether the tooltip should not be displayed.
          */
         "hideTooltip": boolean;
-        "i18n": PlayerProps[PlayerProp.I18N];
-        "isPiPActive": PlayerProps[PlayerProp.IsPiPActive];
+        "i18n": PlayerProps[PlayerProp.i18n];
+        "isPiPActive": PlayerProps[PlayerProp.isPiPActive];
         /**
           * A slash (`/`) seperated string of JS keyboard keys (`KeyboardEvent.key`), that when caught in a `keydown` event, will trigger a `click` event on the control.
           * @inheritdoc
          */
         "keys"?: string;
-        "playbackReady": PlayerProps[PlayerProp.PlaybackReady];
+        "playbackReady": PlayerProps[PlayerProp.playbackReady];
         /**
           * Scale the size of the control up/down by the amount given.
          */
@@ -744,7 +744,7 @@ export namespace Components {
           * Whether the tooltip should not be displayed.
          */
         "hideTooltip": boolean;
-        "i18n": PlayerProps[PlayerProp.I18N];
+        "i18n": PlayerProps[PlayerProp.i18n];
         /**
           * A slash (`/`) seperated string of JS keyboard keys (`KeyboardEvent.key`), that when caught in a `keydown` event, will trigger a `click` event on the control.
           * @inheritdoc
@@ -754,7 +754,7 @@ export namespace Components {
           * The URL to an SVG element or fragment to load.
          */
         "pauseIcon": string;
-        "paused": PlayerProps[PlayerProp.Paused];
+        "paused": PlayerProps[PlayerProp.paused];
         /**
           * The URL to an SVG element or fragment to load.
          */
@@ -1110,37 +1110,37 @@ export namespace Components {
         "volume": number;
     }
     interface VimePoster {
-        "currentPoster"?: PlayerProps[PlayerProp.CurrentPoster];
+        "currentPoster"?: PlayerProps[PlayerProp.currentPoster];
         /**
           * How the poster image should be resized to fit the container (sets the `object-fit` property).
          */
         "fit"?: 'fill' | 'contain' | 'cover' | 'scale-down' | 'none';
-        "isVideoView": PlayerProps[PlayerProp.IsVideoView];
-        "mediaTitle"?: PlayerProps[PlayerProp.MediaTitle];
-        "playbackStarted": PlayerProps[PlayerProp.PlaybackStarted];
+        "isVideoView": PlayerProps[PlayerProp.isVideoView];
+        "mediaTitle"?: PlayerProps[PlayerProp.mediaTitle];
+        "playbackStarted": PlayerProps[PlayerProp.playbackStarted];
     }
     interface VimeScrim {
         /**
           * If this prop is defined, a dark gradient that smoothly fades out without being noticed will be used instead of a set color. This prop also sets the direction in which the dark end of the gradient should start. If the direction is set to `up`, the dark end of the gradient will start at the bottom of the player and fade out to the center. If the direction is set to `down`, the gradient will start at the top of the player and fade out to the center.
          */
         "gradient"?: 'up' | 'down';
-        "isControlsActive": PlayerProps[PlayerProp.IsControlsActive];
-        "isVideoView": PlayerProps[PlayerProp.IsVideoView];
+        "isControlsActive": PlayerProps[PlayerProp.isControlsActive];
+        "isVideoView": PlayerProps[PlayerProp.isVideoView];
     }
     interface VimeScrubberControl {
         /**
           * Whether the timestamp in the tooltip should show the hours unit, even if the time is less than 1 hour (eg: `20:35` -> `00:20:35`).
          */
         "alwaysShowHours": boolean;
-        "buffered": PlayerProps[PlayerProp.Buffered];
-        "buffering": PlayerProps[PlayerProp.Buffering];
-        "currentTime": PlayerProps[PlayerProp.CurrentTime];
-        "duration": PlayerProps[PlayerProp.Duration];
+        "buffered": PlayerProps[PlayerProp.buffered];
+        "buffering": PlayerProps[PlayerProp.buffering];
+        "currentTime": PlayerProps[PlayerProp.currentTime];
+        "duration": PlayerProps[PlayerProp.duration];
         /**
           * Whether the tooltip should not be displayed.
          */
         "hideTooltip": boolean;
-        "i18n": PlayerProps[PlayerProp.I18N];
+        "i18n": PlayerProps[PlayerProp.i18n];
         /**
           * Prevents seeking forward/backward by using the Left/Right arrow keys.
          */
@@ -1155,8 +1155,8 @@ export namespace Components {
           * The height of any lower control bar in pixels so that the settings can re-position itself accordingly.
          */
         "controlsHeight": number;
-        "isAudioView": PlayerProps[PlayerProp.IsAudioView];
-        "isMobile": PlayerProps[PlayerProp.IsMobile];
+        "isAudioView": PlayerProps[PlayerProp.isAudioView];
+        "isMobile": PlayerProps[PlayerProp.isMobile];
         /**
           * Sets the controller responsible for opening/closing this settings.
          */
@@ -1164,7 +1164,7 @@ export namespace Components {
     }
     interface VimeSettingsControl {
         "expanded": boolean;
-        "i18n": PlayerProps[PlayerProp.I18N];
+        "i18n": PlayerProps[PlayerProp.i18n];
         /**
           * The URL to an SVG element or fragment to load.
          */
@@ -1202,8 +1202,8 @@ export namespace Components {
         "valueText"?: string;
     }
     interface VimeSpinner {
-        "buffering": PlayerProps[PlayerProp.Buffering];
-        "isVideoView": PlayerProps[PlayerProp.IsVideoView];
+        "buffering": PlayerProps[PlayerProp.buffering];
+        "isVideoView": PlayerProps[PlayerProp.isVideoView];
     }
     interface VimeSubmenu {
         /**
@@ -1260,16 +1260,16 @@ export namespace Components {
           * Whether the tooltip is displayed or not.
          */
         "hidden": boolean;
-        "isTouch": PlayerProps[PlayerProp.IsTouch];
+        "isTouch": PlayerProps[PlayerProp.isTouch];
         /**
           * Determines if the tooltip appears on top/bottom of it's parent.
          */
         "position": TooltipPosition;
     }
     interface VimeUi {
-        "isFullscreenActive": PlayerProps[PlayerProp.IsFullscreenActive];
-        "isVideoView": PlayerProps[PlayerProp.IsVideoView];
-        "playsinline": PlayerProps[PlayerProp.Playsinline];
+        "isFullscreenActive": PlayerProps[PlayerProp.isFullscreenActive];
+        "isVideoView": PlayerProps[PlayerProp.isVideoView];
+        "playsinline": PlayerProps[PlayerProp.playsinline];
     }
     interface VimeVideo {
         /**
@@ -1349,8 +1349,8 @@ export namespace Components {
           * The URL to an SVG element or fragment.
          */
         "highVolumeIcon": string;
-        "i18n": PlayerProps[PlayerProp.I18N];
-        "isMobile": PlayerProps[PlayerProp.IsMobile];
+        "i18n": PlayerProps[PlayerProp.i18n];
+        "isMobile": PlayerProps[PlayerProp.isMobile];
         /**
           * The URL to an SVG element or fragment.
          */
@@ -1359,7 +1359,7 @@ export namespace Components {
           * A pipe (`/`) seperated string of JS keyboard keys, that when caught in a `keydown` event, will toggle the muted state of the player.
          */
         "muteKeys"?: string;
-        "muted": PlayerProps[PlayerProp.Muted];
+        "muted": PlayerProps[PlayerProp.muted];
         /**
           * The URL to an SVG element or fragment.
          */
@@ -1372,7 +1372,7 @@ export namespace Components {
           * The direction in which the tooltip should grow.
          */
         "tooltipDirection": TooltipDirection;
-        "volume": PlayerProps[PlayerProp.Volume];
+        "volume": PlayerProps[PlayerProp.volume];
     }
     interface VimeYoutube {
         "autoplay": boolean;
@@ -1754,7 +1754,7 @@ declare namespace LocalJSX {
         "willAttach"?: boolean;
     }
     interface VimeCaptionControl {
-        "currentCaption"?: PlayerProps[PlayerProp.CurrentCaption];
+        "currentCaption"?: PlayerProps[PlayerProp.currentCaption];
         /**
           * The URL to an SVG element or fragment to load.
          */
@@ -1763,8 +1763,8 @@ declare namespace LocalJSX {
           * Whether the tooltip should not be displayed.
          */
         "hideTooltip"?: boolean;
-        "i18n"?: PlayerProps[PlayerProp.I18N];
-        "isCaptionsActive"?: PlayerProps[PlayerProp.IsCaptionsActive];
+        "i18n"?: PlayerProps[PlayerProp.i18n];
+        "isCaptionsActive"?: PlayerProps[PlayerProp.isCaptionsActive];
         /**
           * A slash (`/`) seperated string of JS keyboard keys (`KeyboardEvent.key`), that when caught in a `keydown` event, will trigger a `click` event on the control.
           * @inheritdoc
@@ -1792,8 +1792,8 @@ declare namespace LocalJSX {
           * Whether the captions should be visible or not.
          */
         "hidden"?: boolean;
-        "isControlsActive"?: PlayerProps[PlayerProp.IsControlsActive];
-        "isVideoView"?: PlayerProps[PlayerProp.IsVideoView];
+        "isControlsActive"?: PlayerProps[PlayerProp.isControlsActive];
+        "isVideoView"?: PlayerProps[PlayerProp.isVideoView];
         /**
           * Emitted when the active cues change. A cue is active when `currentTime >= cue.startTime && currentTime <= cue.endTime`.
          */
@@ -1802,12 +1802,12 @@ declare namespace LocalJSX {
           * Emitted when the current track changes.
          */
         "onVTrackChange"?: (event: CustomEvent<TextTrack | undefined>) => void;
-        "playbackStarted"?: PlayerProps[PlayerProp.PlaybackStarted];
-        "textTracks"?: PlayerProps[PlayerProp.TextTracks];
+        "playbackStarted"?: PlayerProps[PlayerProp.playbackStarted];
+        "textTracks"?: PlayerProps[PlayerProp.textTracks];
     }
     interface VimeClickToPlay {
-        "isVideoView"?: PlayerProps[PlayerProp.IsVideoView];
-        "paused"?: PlayerProps[PlayerProp.Paused];
+        "isVideoView"?: PlayerProps[PlayerProp.isVideoView];
+        "paused"?: PlayerProps[PlayerProp.paused];
         /**
           * By default this is disabled on mobile to not interfere with playback, set this to `true` to enable it.
          */
@@ -1826,7 +1826,7 @@ declare namespace LocalJSX {
           * The `id` attribute of the control.
          */
         "identifier"?: string;
-        "isTouch"?: PlayerProps[PlayerProp.IsTouch];
+        "isTouch"?: PlayerProps[PlayerProp.isTouch];
         /**
           * A slash (`/`) seperated string of JS keyboard keys (`KeyboardEvent.key`), that when caught in a `keydown` event, will trigger a `click` event on the control.
           * @inheritdoc
@@ -1894,9 +1894,9 @@ declare namespace LocalJSX {
           * Whether the controls should show/hide when paused. Audio players are not effected by this prop.
          */
         "hideWhenPaused"?: boolean;
-        "isAudioView"?: PlayerProps[PlayerProp.IsAudioView];
-        "isControlsActive"?: PlayerProps[PlayerProp.IsControlsActive];
-        "isSettingsActive"?: PlayerProps[PlayerProp.IsSettingsActive];
+        "isAudioView"?: PlayerProps[PlayerProp.isAudioView];
+        "isControlsActive"?: PlayerProps[PlayerProp.isControlsActive];
+        "isSettingsActive"?: PlayerProps[PlayerProp.isSettingsActive];
         /**
           * Sets the `justify-content` flex property that aligns the individual controls on the main-axis.
          */
@@ -1906,13 +1906,13 @@ declare namespace LocalJSX {
   | 'space-around'
   | 'space-between'
   | 'space-evenly';
-        "paused"?: PlayerProps[PlayerProp.Paused];
+        "paused"?: PlayerProps[PlayerProp.paused];
         /**
           * Pins the controls to the defined position inside the video player. This has no effect when the view is of type `audio`.
          */
         "pin"?: 'topLeft' | 'topRight' | 'bottomLeft' | 'bottomRight' | 'center';
-        "playbackReady"?: PlayerProps[PlayerProp.PlaybackReady];
-        "playbackStarted"?: PlayerProps[PlayerProp.PlaybackStarted];
+        "playbackReady"?: PlayerProps[PlayerProp.playbackReady];
+        "playbackStarted"?: PlayerProps[PlayerProp.playbackStarted];
         /**
           * Whether the controls should wait for playback to start before being shown. Audio players are not effected by this prop.
          */
@@ -1923,8 +1923,8 @@ declare namespace LocalJSX {
           * Whether the time should always show the hours unit, even if the time is less than 1 hour (eg: `20:35` -> `00:20:35`).
          */
         "alwaysShowHours"?: boolean;
-        "currentTime"?: PlayerProps[PlayerProp.CurrentTime];
-        "i18n"?: PlayerProps[PlayerProp.I18N];
+        "currentTime"?: PlayerProps[PlayerProp.currentTime];
+        "i18n"?: PlayerProps[PlayerProp.i18n];
     }
     interface VimeDailymotion {
         "autoplay"?: boolean;
@@ -2036,24 +2036,24 @@ declare namespace LocalJSX {
           * Whether the controls should show/hide when paused. Audio players are not effected by this prop.
          */
         "hideWhenPaused"?: boolean;
-        "isAudioView"?: PlayerProps[PlayerProp.IsAudioView];
-        "isLive"?: PlayerProps[PlayerProp.IsLive];
-        "isMobile"?: PlayerProps[PlayerProp.IsMobile];
-        "isVideoView"?: PlayerProps[PlayerProp.IsVideoView];
+        "isAudioView"?: PlayerProps[PlayerProp.isAudioView];
+        "isLive"?: PlayerProps[PlayerProp.isLive];
+        "isMobile"?: PlayerProps[PlayerProp.isMobile];
+        "isVideoView"?: PlayerProps[PlayerProp.isVideoView];
         /**
           * Whether the controls should wait for playback to start before being shown. Audio players are not effected by this prop.
          */
         "waitForPlaybackStart"?: boolean;
     }
     interface VimeDefaultSettings {
-        "currentCaption"?: PlayerProps[PlayerProp.CurrentCaption];
-        "i18n"?: PlayerProps[PlayerProp.I18N];
-        "isCaptionsActive"?: PlayerProps[PlayerProp.IsCaptionsActive];
-        "playbackQualities"?: PlayerProps[PlayerProp.PlaybackQualities];
-        "playbackQuality"?: PlayerProps[PlayerProp.PlaybackQuality];
-        "playbackRate"?: PlayerProps[PlayerProp.PlaybackRate];
-        "playbackRates"?: PlayerProps[PlayerProp.PlaybackRates];
-        "textTracks"?: PlayerProps[PlayerProp.TextTracks];
+        "currentCaption"?: PlayerProps[PlayerProp.currentCaption];
+        "i18n"?: PlayerProps[PlayerProp.i18n];
+        "isCaptionsActive"?: PlayerProps[PlayerProp.isCaptionsActive];
+        "playbackQualities"?: PlayerProps[PlayerProp.playbackQualities];
+        "playbackQuality"?: PlayerProps[PlayerProp.playbackQuality];
+        "playbackRate"?: PlayerProps[PlayerProp.playbackRate];
+        "playbackRates"?: PlayerProps[PlayerProp.playbackRates];
+        "textTracks"?: PlayerProps[PlayerProp.textTracks];
     }
     interface VimeDefaultUi {
         /**
@@ -2128,8 +2128,8 @@ declare namespace LocalJSX {
           * Whether the time should always show the hours unit, even if the time is less than 1 hour (eg: `20:35` -> `00:20:35`).
          */
         "alwaysShowHours"?: boolean;
-        "duration"?: PlayerProps[PlayerProp.Duration];
-        "i18n"?: PlayerProps[PlayerProp.I18N];
+        "duration"?: PlayerProps[PlayerProp.duration];
+        "i18n"?: PlayerProps[PlayerProp.i18n];
     }
     interface VimeFaketube {
         "autoplay"?: boolean;
@@ -2212,14 +2212,14 @@ declare namespace LocalJSX {
           * Whether the tooltip should not be displayed.
          */
         "hideTooltip"?: boolean;
-        "i18n"?: PlayerProps[PlayerProp.I18N];
-        "isFullscreenActive"?: PlayerProps[PlayerProp.IsFullscreenActive];
+        "i18n"?: PlayerProps[PlayerProp.i18n];
+        "isFullscreenActive"?: PlayerProps[PlayerProp.isFullscreenActive];
         /**
           * A slash (`/`) seperated string of JS keyboard keys (`KeyboardEvent.key`), that when caught in a `keydown` event, will trigger a `click` event on the control.
           * @inheritdoc
          */
         "keys"?: string;
-        "playbackReady"?: PlayerProps[PlayerProp.PlaybackReady];
+        "playbackReady"?: PlayerProps[PlayerProp.playbackReady];
         /**
           * Scale the size of the control up/down by the amount given.
          */
@@ -2304,8 +2304,8 @@ declare namespace LocalJSX {
         "href"?: string;
     }
     interface VimeLiveIndicator {
-        "i18n"?: PlayerProps[PlayerProp.I18N];
-        "isLive"?: PlayerProps[PlayerProp.IsLive];
+        "i18n"?: PlayerProps[PlayerProp.i18n];
+        "isLive"?: PlayerProps[PlayerProp.isLive];
     }
     interface VimeMenu {
         /**
@@ -2366,7 +2366,7 @@ declare namespace LocalJSX {
           * The `id` attribute of the item.
          */
         "identifier"?: string;
-        "isTouch"?: PlayerProps[PlayerProp.IsTouch];
+        "isTouch"?: PlayerProps[PlayerProp.isTouch];
         /**
           * The label/title of the item.
          */
@@ -2421,7 +2421,7 @@ declare namespace LocalJSX {
           * The URL to an SVG element or fragment.
          */
         "highVolumeIcon"?: string;
-        "i18n"?: PlayerProps[PlayerProp.I18N];
+        "i18n"?: PlayerProps[PlayerProp.i18n];
         /**
           * A slash (`/`) seperated string of JS keyboard keys (`KeyboardEvent.key`), that when caught in a `keydown` event, will trigger a `click` event on the control.
           * @inheritdoc
@@ -2431,7 +2431,7 @@ declare namespace LocalJSX {
           * The URL to an SVG element or fragment.
          */
         "lowVolumeIcon"?: string;
-        "muted"?: PlayerProps[PlayerProp.Muted];
+        "muted"?: PlayerProps[PlayerProp.muted];
         /**
           * The URL to an SVG element or fragment.
          */
@@ -2444,7 +2444,7 @@ declare namespace LocalJSX {
           * The direction in which the tooltip should grow.
          */
         "tooltipDirection"?: TooltipDirection;
-        "volume"?: PlayerProps[PlayerProp.Volume];
+        "volume"?: PlayerProps[PlayerProp.volume];
     }
     interface VimePipControl {
         /**
@@ -2459,14 +2459,14 @@ declare namespace LocalJSX {
           * Whether the tooltip should not be displayed.
          */
         "hideTooltip"?: boolean;
-        "i18n"?: PlayerProps[PlayerProp.I18N];
-        "isPiPActive"?: PlayerProps[PlayerProp.IsPiPActive];
+        "i18n"?: PlayerProps[PlayerProp.i18n];
+        "isPiPActive"?: PlayerProps[PlayerProp.isPiPActive];
         /**
           * A slash (`/`) seperated string of JS keyboard keys (`KeyboardEvent.key`), that when caught in a `keydown` event, will trigger a `click` event on the control.
           * @inheritdoc
          */
         "keys"?: string;
-        "playbackReady"?: PlayerProps[PlayerProp.PlaybackReady];
+        "playbackReady"?: PlayerProps[PlayerProp.playbackReady];
         /**
           * Scale the size of the control up/down by the amount given.
          */
@@ -2481,7 +2481,7 @@ declare namespace LocalJSX {
           * Whether the tooltip should not be displayed.
          */
         "hideTooltip"?: boolean;
-        "i18n"?: PlayerProps[PlayerProp.I18N];
+        "i18n"?: PlayerProps[PlayerProp.i18n];
         /**
           * A slash (`/`) seperated string of JS keyboard keys (`KeyboardEvent.key`), that when caught in a `keydown` event, will trigger a `click` event on the control.
           * @inheritdoc
@@ -2491,7 +2491,7 @@ declare namespace LocalJSX {
           * The URL to an SVG element or fragment to load.
          */
         "pauseIcon"?: string;
-        "paused"?: PlayerProps[PlayerProp.Paused];
+        "paused"?: PlayerProps[PlayerProp.paused];
         /**
           * The URL to an SVG element or fragment to load.
          */
@@ -2684,32 +2684,32 @@ declare namespace LocalJSX {
           * Emitted when the `buffered` prop changes value.
           * @inheritDoc
          */
-        "onVBufferedChange"?: (event: CustomEvent<PlayerProps[PlayerProp.Buffered]>) => void;
+        "onVBufferedChange"?: (event: CustomEvent<PlayerProps[PlayerProp.buffered]>) => void;
         /**
           * Emitted when the `buffering` prop changes value.
           * @inheritDoc
          */
-        "onVBufferingChange"?: (event: CustomEvent<PlayerProps[PlayerProp.Buffering]>) => void;
+        "onVBufferingChange"?: (event: CustomEvent<PlayerProps[PlayerProp.buffering]>) => void;
         /**
           * Emitted when the `isControlsActive` prop changes value.
           * @inheritDoc
          */
-        "onVControlsChange"?: (event: CustomEvent<PlayerProps[PlayerProp.IsControlsActive]>) => void;
+        "onVControlsChange"?: (event: CustomEvent<PlayerProps[PlayerProp.isControlsActive]>) => void;
         /**
           * Emitted when the `currentPoster` prop changes value.
           * @inheritDoc
          */
-        "onVCurrentPosterChange"?: (event: CustomEvent<PlayerProps[PlayerProp.CurrentPoster]>) => void;
+        "onVCurrentPosterChange"?: (event: CustomEvent<PlayerProps[PlayerProp.currentPoster]>) => void;
         /**
           * Emitted when the `currentSrc` prop changes value.
           * @inheritDoc
          */
-        "onVCurrentSrcChange"?: (event: CustomEvent<PlayerProps[PlayerProp.CurrentSrc]>) => void;
+        "onVCurrentSrcChange"?: (event: CustomEvent<PlayerProps[PlayerProp.currentSrc]>) => void;
         /**
           * Emitted when the `currentTime` prop changes value.
           * @inheritDoc
          */
-        "onVCurrentTimeChange"?: (event: CustomEvent<PlayerProps[PlayerProp.CurrentTime]>) => void;
+        "onVCurrentTimeChange"?: (event: CustomEvent<PlayerProps[PlayerProp.currentTime]>) => void;
         /**
           * Emitted when the player has disconnected from the DOM and been destroyed.
           * @inheritDoc
@@ -2719,32 +2719,32 @@ declare namespace LocalJSX {
           * Emitted when the `duration` prop changes value.
           * @inheritDoc
          */
-        "onVDurationChange"?: (event: CustomEvent<PlayerProps[PlayerProp.Duration]>) => void;
+        "onVDurationChange"?: (event: CustomEvent<PlayerProps[PlayerProp.duration]>) => void;
         /**
           * Emitted when the `errors` prop changes value.
           * @inheritDoc
          */
-        "onVErrorsChange"?: (event: CustomEvent<PlayerProps[PlayerProp.Errors]>) => void;
+        "onVErrorsChange"?: (event: CustomEvent<PlayerProps[PlayerProp.errors]>) => void;
         /**
           * Emitted when the `isFullscreenActive` prop changes value.
           * @inheritDoc
          */
-        "onVFullscreenChange"?: (event: CustomEvent<PlayerProps[PlayerProp.IsFullscreenActive]>) => void;
+        "onVFullscreenChange"?: (event: CustomEvent<PlayerProps[PlayerProp.isFullscreenActive]>) => void;
         /**
           * Emitted when the `language` prop changes value.
           * @inheritDoc
          */
-        "onVLanguageChange"?: (event: CustomEvent<PlayerProps[PlayerProp.Language]>) => void;
+        "onVLanguageChange"?: (event: CustomEvent<PlayerProps[PlayerProp.language]>) => void;
         /**
           * Emitted when the `languages` prop changes value.
           * @inheritDoc
          */
-        "onVLanguagesChange"?: (event: CustomEvent<PlayerProps[PlayerProp.Languages]>) => void;
+        "onVLanguagesChange"?: (event: CustomEvent<PlayerProps[PlayerProp.languages]>) => void;
         /**
           * Emitted when the `isLive` prop changes value.
           * @inheritDoc
          */
-        "onVLiveChange"?: (event: CustomEvent<PlayerProps[PlayerProp.IsLive]>) => void;
+        "onVLiveChange"?: (event: CustomEvent<PlayerProps[PlayerProp.isLive]>) => void;
         /**
           * Emitted when the provider starts loading a media resource.
           * @inheritDoc
@@ -2754,12 +2754,12 @@ declare namespace LocalJSX {
           * Emitted when the `mediaTitle` prop changes value.
           * @inheritDoc
          */
-        "onVMediaTitleChange"?: (event: CustomEvent<PlayerProps[PlayerProp.MediaTitle]>) => void;
+        "onVMediaTitleChange"?: (event: CustomEvent<PlayerProps[PlayerProp.mediaTitle]>) => void;
         /**
           * Emitted when the `mediaType` prop changes value.
           * @inheritDoc
          */
-        "onVMediaTypeChange"?: (event: CustomEvent<PlayerProps[PlayerProp.MediaType]>) => void;
+        "onVMediaTypeChange"?: (event: CustomEvent<PlayerProps[PlayerProp.mediaType]>) => void;
         /**
           * Emitted when the player has mounted the DOM.
           * @inheritDoc
@@ -2769,17 +2769,17 @@ declare namespace LocalJSX {
           * Emitted when the `muted` prop changes value.
           * @inheritDoc
          */
-        "onVMutedChange"?: (event: CustomEvent<PlayerProps[PlayerProp.Muted]>) => void;
+        "onVMutedChange"?: (event: CustomEvent<PlayerProps[PlayerProp.muted]>) => void;
         /**
           * Emitted when the `paused` prop changes value.
           * @inheritDoc
          */
-        "onVPausedChange"?: (event: CustomEvent<PlayerProps[PlayerProp.Paused]>) => void;
+        "onVPausedChange"?: (event: CustomEvent<PlayerProps[PlayerProp.paused]>) => void;
         /**
           * Emitted when the `isPiPActive` prop changes value.
           * @inheritDoc
          */
-        "onVPiPChange"?: (event: CustomEvent<PlayerProps[PlayerProp.IsPiPActive]>) => void;
+        "onVPiPChange"?: (event: CustomEvent<PlayerProps[PlayerProp.isPiPActive]>) => void;
         /**
           * Emitted when the media is transitioning from `paused` to `playing`. Event flow: `paused` -> `play` -> `playing`. The media starts `playing` once enough content has buffered to begin/resume playback.
           * @inheritDoc
@@ -2794,22 +2794,22 @@ declare namespace LocalJSX {
           * Emitted when the `playbackQualities` prop changes value.
           * @inheritDoc
          */
-        "onVPlaybackQualitiesChange"?: (event: CustomEvent<PlayerProps[PlayerProp.PlaybackQualities]>) => void;
+        "onVPlaybackQualitiesChange"?: (event: CustomEvent<PlayerProps[PlayerProp.playbackQualities]>) => void;
         /**
           * Emitted when the `playbackQuality` prop changes value.
           * @inheritDoc
          */
-        "onVPlaybackQualityChange"?: (event: CustomEvent<PlayerProps[PlayerProp.PlaybackQuality]>) => void;
+        "onVPlaybackQualityChange"?: (event: CustomEvent<PlayerProps[PlayerProp.playbackQuality]>) => void;
         /**
           * Emitted when the `playbackRate` prop changes value.
           * @inheritDoc
          */
-        "onVPlaybackRateChange"?: (event: CustomEvent<PlayerProps[PlayerProp.PlaybackRate]>) => void;
+        "onVPlaybackRateChange"?: (event: CustomEvent<PlayerProps[PlayerProp.playbackRate]>) => void;
         /**
           * Emitted when the `playbackRates` prop changes value.
           * @inheritDoc
          */
-        "onVPlaybackRatesChange"?: (event: CustomEvent<PlayerProps[PlayerProp.PlaybackRates]>) => void;
+        "onVPlaybackRatesChange"?: (event: CustomEvent<PlayerProps[PlayerProp.playbackRates]>) => void;
         /**
           * Emitted when the media is ready to begin playback. The following props are guaranteed to be defined when this fires: `mediaTitle`, `currentSrc`, `currentPoster`, `duration`, `mediaType`, `viewType`.
           * @inheritDoc
@@ -2824,7 +2824,7 @@ declare namespace LocalJSX {
           * Emitted when the `playing` prop changes value.
           * @inheritDoc
          */
-        "onVPlayingChange"?: (event: CustomEvent<PlayerProps[PlayerProp.Playing]>) => void;
+        "onVPlayingChange"?: (event: CustomEvent<PlayerProps[PlayerProp.playing]>) => void;
         /**
           * Emitted when the player has loaded and is ready to be interacted with.
           * @inheritDoc
@@ -2839,27 +2839,27 @@ declare namespace LocalJSX {
           * Emitted when the `seeking` prop changes value.
           * @inheritDoc
          */
-        "onVSeekingChange"?: (event: CustomEvent<PlayerProps[PlayerProp.Seeking]>) => void;
+        "onVSeekingChange"?: (event: CustomEvent<PlayerProps[PlayerProp.seeking]>) => void;
         /**
           * Emitted when the `textTracks` prop changes value.
           * @inheritDoc
          */
-        "onVTextTracksChange"?: (event: CustomEvent<PlayerProps[PlayerProp.TextTracks]>) => void;
+        "onVTextTracksChange"?: (event: CustomEvent<PlayerProps[PlayerProp.textTracks]>) => void;
         /**
           * Emitted when the `isTouch` prop changes value.
           * @inheritDoc
          */
-        "onVTouchChange"?: (event: CustomEvent<PlayerProps[PlayerProp.IsTouch]>) => void;
+        "onVTouchChange"?: (event: CustomEvent<PlayerProps[PlayerProp.isTouch]>) => void;
         /**
           * Emitted when the `viewType` prop changes value.
           * @inheritDoc
          */
-        "onVViewTypeChange"?: (event: CustomEvent<PlayerProps[PlayerProp.ViewType]>) => void;
+        "onVViewTypeChange"?: (event: CustomEvent<PlayerProps[PlayerProp.viewType]>) => void;
         /**
           * Emitted when the `volume` prop changes value.
           * @inheritDoc
          */
-        "onVVolumeChange"?: (event: CustomEvent<PlayerProps[PlayerProp.Volume]>) => void;
+        "onVVolumeChange"?: (event: CustomEvent<PlayerProps[PlayerProp.volume]>) => void;
         /**
           * Whether playback should be paused. Defaults to `true` if no media has loaded or playback has not started. Setting this to `true` will begin/resume playback.
           * @inheritDoc
@@ -2942,13 +2942,13 @@ declare namespace LocalJSX {
         "volume"?: number;
     }
     interface VimePoster {
-        "currentPoster"?: PlayerProps[PlayerProp.CurrentPoster];
+        "currentPoster"?: PlayerProps[PlayerProp.currentPoster];
         /**
           * How the poster image should be resized to fit the container (sets the `object-fit` property).
          */
         "fit"?: 'fill' | 'contain' | 'cover' | 'scale-down' | 'none';
-        "isVideoView"?: PlayerProps[PlayerProp.IsVideoView];
-        "mediaTitle"?: PlayerProps[PlayerProp.MediaTitle];
+        "isVideoView"?: PlayerProps[PlayerProp.isVideoView];
+        "mediaTitle"?: PlayerProps[PlayerProp.mediaTitle];
         /**
           * Emitted when the poster has loaded.
          */
@@ -2961,30 +2961,30 @@ declare namespace LocalJSX {
           * Emitted when the poster will be shown.
          */
         "onVWillShow"?: (event: CustomEvent<void>) => void;
-        "playbackStarted"?: PlayerProps[PlayerProp.PlaybackStarted];
+        "playbackStarted"?: PlayerProps[PlayerProp.playbackStarted];
     }
     interface VimeScrim {
         /**
           * If this prop is defined, a dark gradient that smoothly fades out without being noticed will be used instead of a set color. This prop also sets the direction in which the dark end of the gradient should start. If the direction is set to `up`, the dark end of the gradient will start at the bottom of the player and fade out to the center. If the direction is set to `down`, the gradient will start at the top of the player and fade out to the center.
          */
         "gradient"?: 'up' | 'down';
-        "isControlsActive"?: PlayerProps[PlayerProp.IsControlsActive];
-        "isVideoView"?: PlayerProps[PlayerProp.IsVideoView];
+        "isControlsActive"?: PlayerProps[PlayerProp.isControlsActive];
+        "isVideoView"?: PlayerProps[PlayerProp.isVideoView];
     }
     interface VimeScrubberControl {
         /**
           * Whether the timestamp in the tooltip should show the hours unit, even if the time is less than 1 hour (eg: `20:35` -> `00:20:35`).
          */
         "alwaysShowHours"?: boolean;
-        "buffered"?: PlayerProps[PlayerProp.Buffered];
-        "buffering"?: PlayerProps[PlayerProp.Buffering];
-        "currentTime"?: PlayerProps[PlayerProp.CurrentTime];
-        "duration"?: PlayerProps[PlayerProp.Duration];
+        "buffered"?: PlayerProps[PlayerProp.buffered];
+        "buffering"?: PlayerProps[PlayerProp.buffering];
+        "currentTime"?: PlayerProps[PlayerProp.currentTime];
+        "duration"?: PlayerProps[PlayerProp.duration];
         /**
           * Whether the tooltip should not be displayed.
          */
         "hideTooltip"?: boolean;
-        "i18n"?: PlayerProps[PlayerProp.I18N];
+        "i18n"?: PlayerProps[PlayerProp.i18n];
         /**
           * Prevents seeking forward/backward by using the Left/Right arrow keys.
          */
@@ -2999,12 +2999,12 @@ declare namespace LocalJSX {
           * The height of any lower control bar in pixels so that the settings can re-position itself accordingly.
          */
         "controlsHeight"?: number;
-        "isAudioView"?: PlayerProps[PlayerProp.IsAudioView];
-        "isMobile"?: PlayerProps[PlayerProp.IsMobile];
+        "isAudioView"?: PlayerProps[PlayerProp.isAudioView];
+        "isMobile"?: PlayerProps[PlayerProp.isMobile];
     }
     interface VimeSettingsControl {
         "expanded"?: boolean;
-        "i18n"?: PlayerProps[PlayerProp.I18N];
+        "i18n"?: PlayerProps[PlayerProp.i18n];
         /**
           * The URL to an SVG element or fragment to load.
          */
@@ -3046,8 +3046,8 @@ declare namespace LocalJSX {
         "valueText"?: string;
     }
     interface VimeSpinner {
-        "buffering"?: PlayerProps[PlayerProp.Buffering];
-        "isVideoView"?: PlayerProps[PlayerProp.IsVideoView];
+        "buffering"?: PlayerProps[PlayerProp.buffering];
+        "isVideoView"?: PlayerProps[PlayerProp.isVideoView];
         /**
           * Emitted when the spinner will be hidden.
          */
@@ -3112,16 +3112,16 @@ declare namespace LocalJSX {
           * Whether the tooltip is displayed or not.
          */
         "hidden"?: boolean;
-        "isTouch"?: PlayerProps[PlayerProp.IsTouch];
+        "isTouch"?: PlayerProps[PlayerProp.isTouch];
         /**
           * Determines if the tooltip appears on top/bottom of it's parent.
          */
         "position"?: TooltipPosition;
     }
     interface VimeUi {
-        "isFullscreenActive"?: PlayerProps[PlayerProp.IsFullscreenActive];
-        "isVideoView"?: PlayerProps[PlayerProp.IsVideoView];
-        "playsinline"?: PlayerProps[PlayerProp.Playsinline];
+        "isFullscreenActive"?: PlayerProps[PlayerProp.isFullscreenActive];
+        "isVideoView"?: PlayerProps[PlayerProp.isVideoView];
+        "playsinline"?: PlayerProps[PlayerProp.playsinline];
     }
     interface VimeVideo {
         /**
@@ -3200,8 +3200,8 @@ declare namespace LocalJSX {
           * The URL to an SVG element or fragment.
          */
         "highVolumeIcon"?: string;
-        "i18n"?: PlayerProps[PlayerProp.I18N];
-        "isMobile"?: PlayerProps[PlayerProp.IsMobile];
+        "i18n"?: PlayerProps[PlayerProp.i18n];
+        "isMobile"?: PlayerProps[PlayerProp.isMobile];
         /**
           * The URL to an SVG element or fragment.
          */
@@ -3210,7 +3210,7 @@ declare namespace LocalJSX {
           * A pipe (`/`) seperated string of JS keyboard keys, that when caught in a `keydown` event, will toggle the muted state of the player.
          */
         "muteKeys"?: string;
-        "muted"?: PlayerProps[PlayerProp.Muted];
+        "muted"?: PlayerProps[PlayerProp.muted];
         /**
           * The URL to an SVG element or fragment.
          */
@@ -3223,7 +3223,7 @@ declare namespace LocalJSX {
           * The direction in which the tooltip should grow.
          */
         "tooltipDirection"?: TooltipDirection;
-        "volume"?: PlayerProps[PlayerProp.Volume];
+        "volume"?: PlayerProps[PlayerProp.volume];
     }
     interface VimeYoutube {
         "autoplay"?: boolean;
