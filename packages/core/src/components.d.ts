@@ -2184,6 +2184,10 @@ declare namespace LocalJSX {
         "muted"?: boolean;
         "onVLoadStart"?: (event: CustomEvent<void>) => void;
         /**
+          * Emitted when the child <source> elements are modified.
+         */
+        "onVSrcSetChange"?: (event: CustomEvent<void>) => void;
+        /**
           * The playback rates that are available for this media.
          */
         "playbackRates"?: number[];
