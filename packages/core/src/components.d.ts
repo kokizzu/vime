@@ -313,6 +313,7 @@ export namespace Components {
         "isLive": PlayerProps['isLive'];
         "isMobile": PlayerProps['isMobile'];
         "isVideoView": PlayerProps['isVideoView'];
+        "theme"?: PlayerProps['theme'];
         /**
           * Whether the controls should wait for playback to start before being shown. Audio players are not effected by this prop.
          */
@@ -2042,6 +2043,7 @@ declare namespace LocalJSX {
         "isLive"?: PlayerProps['isLive'];
         "isMobile"?: PlayerProps['isMobile'];
         "isVideoView"?: PlayerProps['isVideoView'];
+        "theme"?: PlayerProps['theme'];
         /**
           * Whether the controls should wait for playback to start before being shown. Audio players are not effected by this prop.
          */
