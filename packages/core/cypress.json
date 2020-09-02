@@ -17,5 +17,9 @@
         "threshold": 0.3
       }
     }
+  },
+  "retries": {
+    "runMode": 2,
+    "openMode": 0
   }
 }
