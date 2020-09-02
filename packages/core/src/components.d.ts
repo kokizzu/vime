@@ -56,10 +56,6 @@ export namespace Components {
          */
         "keys"?: string;
         /**
-          * Scale the size of the control up/down by the amount given.
-         */
-        "scale": number;
-        /**
           * The URL to an SVG element or fragment to load.
          */
         "showIcon": string;
@@ -121,10 +117,6 @@ export namespace Components {
           * If the control is a toggle, this indicated whether the control is in a "pressed" state or not. Sets the `aria-pressed` property.
          */
         "pressed"?: boolean;
-        /**
-          * Scale the size of the control up/down by the amount given.
-         */
-        "scale": number;
     }
     interface VimeControlGroup {
         /**
@@ -498,10 +490,6 @@ export namespace Components {
         "keys"?: string;
         "playbackReady": PlayerProps['playbackReady'];
         /**
-          * Scale the size of the control up/down by the amount given.
-         */
-        "scale": number;
-        /**
           * The direction in which the tooltip should grow.
          */
         "tooltipDirection": TooltipDirection;
@@ -558,21 +546,9 @@ export namespace Components {
     }
     interface VimeIcon {
         /**
-          * The color (fill) of the icon.
-         */
-        "color"?: string;
-        /**
           * The URL to an SVG element or fragment to load.
          */
         "href"?: string;
-        /**
-          * The amount of transparency to add to the icon.
-         */
-        "opacity": number;
-        /**
-          * The amount to scale the size of the icon (respecting aspect ratio) up or down by.
-         */
-        "scale": number;
     }
     interface VimeIcons {
         /**
@@ -702,10 +678,6 @@ export namespace Components {
          */
         "mutedIcon": string;
         /**
-          * Scale the size of the control up/down by the amount given.
-         */
-        "scale": number;
-        /**
           * The direction in which the tooltip should grow.
          */
         "tooltipDirection": TooltipDirection;
@@ -733,10 +705,6 @@ export namespace Components {
         "keys"?: string;
         "playbackReady": PlayerProps['playbackReady'];
         /**
-          * Scale the size of the control up/down by the amount given.
-         */
-        "scale": number;
-        /**
           * The direction in which the tooltip should grow.
          */
         "tooltipDirection": TooltipDirection;
@@ -761,10 +729,6 @@ export namespace Components {
           * The URL to an SVG element or fragment to load.
          */
         "playIcon": string;
-        /**
-          * Scale the size of the control up/down by the amount given.
-         */
-        "scale": number;
         /**
           * The direction in which the tooltip should grow.
          */
@@ -1774,10 +1738,6 @@ declare namespace LocalJSX {
          */
         "keys"?: string;
         /**
-          * Scale the size of the control up/down by the amount given.
-         */
-        "scale"?: number;
-        /**
           * The URL to an SVG element or fragment to load.
          */
         "showIcon"?: string;
@@ -1851,10 +1811,6 @@ declare namespace LocalJSX {
           * If the control is a toggle, this indicated whether the control is in a "pressed" state or not. Sets the `aria-pressed` property.
          */
         "pressed"?: boolean;
-        /**
-          * Scale the size of the control up/down by the amount given.
-         */
-        "scale"?: number;
     }
     interface VimeControlGroup {
         /**
@@ -2233,10 +2189,6 @@ declare namespace LocalJSX {
         "keys"?: string;
         "playbackReady"?: PlayerProps['playbackReady'];
         /**
-          * Scale the size of the control up/down by the amount given.
-         */
-        "scale"?: number;
-        /**
           * The direction in which the tooltip should grow.
          */
         "tooltipDirection"?: TooltipDirection;
@@ -2293,21 +2245,9 @@ declare namespace LocalJSX {
     }
     interface VimeIcon {
         /**
-          * The color (fill) of the icon.
-         */
-        "color"?: string;
-        /**
           * The URL to an SVG element or fragment to load.
          */
         "href"?: string;
-        /**
-          * The amount of transparency to add to the icon.
-         */
-        "opacity"?: number;
-        /**
-          * The amount to scale the size of the icon (respecting aspect ratio) up or down by.
-         */
-        "scale"?: number;
     }
     interface VimeIcons {
         /**
@@ -2449,10 +2389,6 @@ declare namespace LocalJSX {
          */
         "mutedIcon"?: string;
         /**
-          * Scale the size of the control up/down by the amount given.
-         */
-        "scale"?: number;
-        /**
           * The direction in which the tooltip should grow.
          */
         "tooltipDirection"?: TooltipDirection;
@@ -2480,10 +2416,6 @@ declare namespace LocalJSX {
         "keys"?: string;
         "playbackReady"?: PlayerProps['playbackReady'];
         /**
-          * Scale the size of the control up/down by the amount given.
-         */
-        "scale"?: number;
-        /**
           * The direction in which the tooltip should grow.
          */
         "tooltipDirection"?: TooltipDirection;
@@ -2508,10 +2440,6 @@ declare namespace LocalJSX {
           * The URL to an SVG element or fragment to load.
          */
         "playIcon"?: string;
-        /**
-          * Scale the size of the control up/down by the amount given.
-         */
-        "scale"?: number;
         /**
           * The direction in which the tooltip should grow.
          */
